@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="50dp"
+    >
+    <RadioGroup
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/btn_new"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:background="@drawable/bg_btn_dynamic_indicator"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/newest"
+            android:textColor="@color/fg_dymaic_type"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/btn_atten"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_btn_dynamic_indicator"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/atten"
+            android:textColor="@color/fg_dymaic_type"
+            android:textSize="12sp"/>
+    </RadioGroup>
+
+    <com.aihuan.common.custom.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:canScroll="false"
+        />
+
+</LinearLayout>

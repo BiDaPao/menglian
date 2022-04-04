@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/icon_vip"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="9dp"
+            android:src="@mipmap/icon_back"
+            android:tint="@color/textColor" />
+
+        <ImageView
+            android:id="@+id/btn_option_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="8dp"
+            android:src="@mipmap/icon_chat_option_more" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_intimacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/left_avatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            app:riv_corner_radius="18dp" />
+
+        <TextView
+            android:id="@+id/tv_intimacy_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:drawableTop="@mipmap/icon_chat_intimacy"
+            android:textColor="#FF6474"
+            android:textSize="10sp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/right_avatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            app:riv_corner_radius="18dp" />
+
+    </LinearLayout>
+
+    <View style="@style/line2" />
+
+    <LinearLayout
+        android:id="@+id/btn_follow_group"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/btn_close_follow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:padding="7dp"
+            android:src="@mipmap/icon_chat_follow_close"
+            android:tint="@color/gray1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/im_follow_tip"
+            android:textColor="@color/gray1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_follow"
+            android:layout_width="44dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_btn_follow"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/follow"
+            android:textColor="@color/global"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray2"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.aihuan.common.custom.DrawableCheckBox
+            android:id="@+id/btn_voice_record"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTint="@color/gray1"
+            android:paddingLeft="10dp"
+            app:dt_left_drawable="@drawable/bg_chat_btn_voice"
+            app:dt_left_height="26dp"
+            app:dt_left_width="26dp" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_chat_room_input"
+                android:gravity="center_vertical"
+                android:hint="@string/im_send_msg"
+                android:imeActionLabel="@string/send"
+                android:imeOptions="actionSend"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray1"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/btn_voice_record_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_chat_voice_record_0"
+                android:gravity="center"
+                android:text="@string/im_press_say"
+                android:textColor="@color/gray1"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+
+        <com.aihuan.common.custom.DrawableCheckBox
+            android:id="@+id/btn_face"
+            android:layout_width="36dp"
+            android:layout_height="46dp"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTint="@color/gray1"
+            app:dt_right_drawable="@drawable/bg_chat_btn_face"
+            app:dt_right_height="26dp"
+            app:dt_right_width="26dp" />
+
+        <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/icon_chat_add"
+            android:tint="@color/gray1" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/more_container"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/face_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_tab_home">
+        <item>@mipmap/icon_main_tab_home_00</item>
+        <item>@mipmap/icon_main_tab_home_01</item>
+        <item>@mipmap/icon_main_tab_home_02</item>
+        <item>@mipmap/icon_main_tab_home_03</item>
+        <item>@mipmap/icon_main_tab_home_04</item>
+        <item>@mipmap/icon_main_tab_home_05</item>
+        <item>@mipmap/icon_main_tab_home_06</item>
+        <item>@mipmap/icon_main_tab_home_07</item>
+        <item>@mipmap/icon_main_tab_home_08</item>
+        <item>@mipmap/icon_main_tab_home_09</item>
+        <item>@mipmap/icon_main_tab_home_10</item>
+        <item>@mipmap/icon_main_tab_home_11</item>
+        <item>@mipmap/icon_main_tab_home_12</item>
+        <item>@mipmap/icon_main_tab_home_13</item>
+        <item>@mipmap/icon_main_tab_home_14</item>
+        <item>@mipmap/icon_main_tab_home_15</item>
+    </string-array>
+    <string-array name="main_tab_find">
+        <item>@mipmap/icon_main_tab_find_00</item>
+        <item>@mipmap/icon_main_tab_find_01</item>
+        <item>@mipmap/icon_main_tab_find_02</item>
+        <item>@mipmap/icon_main_tab_find_03</item>
+        <item>@mipmap/icon_main_tab_find_04</item>
+        <item>@mipmap/icon_main_tab_find_05</item>
+        <item>@mipmap/icon_main_tab_find_06</item>
+        <item>@mipmap/icon_main_tab_find_07</item>
+        <item>@mipmap/icon_main_tab_find_08</item>
+        <item>@mipmap/icon_main_tab_find_09</item>
+        <item>@mipmap/icon_main_tab_find_10</item>
+        <item>@mipmap/icon_main_tab_find_11</item>
+        <item>@mipmap/icon_main_tab_find_12</item>
+        <item>@mipmap/icon_main_tab_find_13</item>
+        <item>@mipmap/icon_main_tab_find_14</item>
+        <item>@mipmap/icon_main_tab_find_15</item>
+    </string-array>
+    <string-array name="main_tab_msg">
+        <item>@mipmap/icon_main_tab_msg_00</item>
+        <item>@mipmap/icon_main_tab_msg_01</item>
+        <item>@mipmap/icon_main_tab_msg_02</item>
+        <item>@mipmap/icon_main_tab_msg_03</item>
+        <item>@mipmap/icon_main_tab_msg_04</item>
+        <item>@mipmap/icon_main_tab_msg_05</item>
+        <item>@mipmap/icon_main_tab_msg_06</item>
+        <item>@mipmap/icon_main_tab_msg_07</item>
+        <item>@mipmap/icon_main_tab_msg_08</item>
+        <item>@mipmap/icon_main_tab_msg_09</item>
+        <item>@mipmap/icon_main_tab_msg_10</item>
+        <item>@mipmap/icon_main_tab_msg_11</item>
+        <item>@mipmap/icon_main_tab_msg_12</item>
+        <item>@mipmap/icon_main_tab_msg_13</item>
+        <item>@mipmap/icon_main_tab_msg_14</item>
+        <item>@mipmap/icon_main_tab_msg_15</item>
+    </string-array>
+    <string-array name="main_tab_me">
+        <item>@mipmap/icon_main_tab_me_00</item>
+        <item>@mipmap/icon_main_tab_me_01</item>
+        <item>@mipmap/icon_main_tab_me_02</item>
+        <item>@mipmap/icon_main_tab_me_03</item>
+        <item>@mipmap/icon_main_tab_me_04</item>
+        <item>@mipmap/icon_main_tab_me_05</item>
+        <item>@mipmap/icon_main_tab_me_06</item>
+        <item>@mipmap/icon_main_tab_me_07</item>
+        <item>@mipmap/icon_main_tab_me_08</item>
+        <item>@mipmap/icon_main_tab_me_09</item>
+        <item>@mipmap/icon_main_tab_me_10</item>
+        <item>@mipmap/icon_main_tab_me_11</item>
+        <item>@mipmap/icon_main_tab_me_12</item>
+        <item>@mipmap/icon_main_tab_me_13</item>
+        <item>@mipmap/icon_main_tab_me_14</item>
+        <item>@mipmap/icon_main_tab_me_15</item>
+    </string-array>
+</resources>

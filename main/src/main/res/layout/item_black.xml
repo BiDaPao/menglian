@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/avatar"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxWidth="130dp"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:id="@+id/level_anchor"
+        android:layout_width="24dp"
+        android:layout_height="14dp"
+        android:layout_alignTop="@id/name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/name"
+        />
+
+    <TextView
+        android:id="@+id/id_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/avatar"
+        android:textColor="@color/textColor2"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_btn_black"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/black_ing"
+        android:textColor="#B3B3B3"
+        android:textSize="11sp"
+        />
+
+    <View
+        style="@style/line2"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

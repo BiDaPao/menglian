@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImpressTextView">
+        <attr name="mt_radius" format="dimension"/>
+        <attr name="mt_checked" format="boolean"/>
+        <attr name="mt_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="ProgressTextView">
+        <attr name="ptv_bg_color" format="color"/>
+        <attr name="ptv_fg_color" format="color"/>
+        <attr name="ptv_stroke_width" format="dimension"/>
+        <attr name="ptv_progress" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="FrameImageView">
+        <attr name="fiv_ratio" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="MyFrameLayout3">
+        <attr name="mfl3_ratio" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="ImpressGroup">
+        <attr name="ig_im_height" format="dimension"/>
+        <attr name="ig_im_radius" format="dimension"/>
+        <attr name="ig_im_padding" format="dimension"/>
+        <attr name="ig_im_gravity" format="enum">
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

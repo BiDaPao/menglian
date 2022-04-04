@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context=".activity.AuthBasicActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:paddingTop="19dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:onClick="backClick"
+                android:padding="9dp"
+                android:src="@mipmap/icon_back"
+              />
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/submit_bg"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
+                android:text="@string/auth_submit"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/textColor"
+        android:text="真实姓名"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.aihuan.main.custom.XEditText
+        android:id="@+id/real_name_input"
+        android:background="@color/white"
+        android:hint="输入真实姓名"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:textSize="14sp"
+        android:maxLength="6"
+        android:textColor="@color/textColor"
+        app:x_clearDrawable="@mipmap/clear"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"/>
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/textColor"
+        android:text="身份证件"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.aihuan.main.custom.XEditText
+        android:id="@+id/card_number_input"
+        android:background="@color/white"
+        android:hint="请输入身份证件"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:textSize="14sp"
+        android:maxLength="18"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        app:x_clearDrawable="@mipmap/clear"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"/>
+
+
+</LinearLayout>

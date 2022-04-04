@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    >
+
+    <com.aihuan.common.custom.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        app:canScroll="false"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        >
+        <com.aihuan.common.custom.TabButtonGroup
+            android:background="@color/white"
+            android:id="@+id/tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+
+            <com.aihuan.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_checked="true"
+                app:tbn_icon_array_id="@array/main_tab_home"
+                app:tbn_icon_size="28dp"
+                app:tbn_text_color_checked="@color/global"
+                app:tbn_text_color_unchecked="@color/gray1"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_home"
+                />
+
+            <com.aihuan.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_array_id="@array/main_tab_find"
+                app:tbn_icon_size="28dp"
+                app:tbn_text_color_checked="@color/global"
+                app:tbn_text_color_unchecked="@color/gray1"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/dynamic"
+                />
+
+            <com.aihuan.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_size="28dp"
+                app:tbn_text_color_checked="@color/global"
+                app:tbn_text_color_unchecked="@color/gray1"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/match"
+                />
+
+            <com.aihuan.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_array_id="@array/main_tab_msg"
+                app:tbn_icon_size="28dp"
+                app:tbn_text_color_checked="@color/global"
+                app:tbn_text_color_unchecked="@color/gray1"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/im_msg"
+                />
+
+            <com.aihuan.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_array_id="@array/main_tab_me"
+                app:tbn_icon_size="28dp"
+                app:tbn_text_color_checked="@color/global"
+                app:tbn_text_color_unchecked="@color/gray1"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_me"
+                />
+
+        </com.aihuan.common.custom.TabButtonGroup>
+
+        <View
+            style="@style/line2"
+            android:layout_above="@id/tab_group"
+            />
+
+        <TextView
+            android:layout_alignTop="@id/tab_group"
+            android:id="@+id/red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:background="@drawable/bg_red_point"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minWidth="14dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/o_home_btn_match"
+            />
+
+        <!--<RelativeLayout-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:id="@+id/btn_match"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="center"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/bg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:src="@mipmap/bg_match"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/center"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:src="@mipmap/icon_match_center"-->
+                <!--&gt;-->
+            <!--</ImageView>-->
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/play_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        />
+
+</RelativeLayout>

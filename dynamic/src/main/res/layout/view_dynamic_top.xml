@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="15dp">
+
+    <include layout="@layout/item_dynamic_top"/>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_marginTop="14dp"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_marginTop="14dp"
+        android:id="@+id/container_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <include layout="@layout/item_dynamic_bot"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/content"
+        android:layout_marginTop="15dp"
+        android:background="@color/gray2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/all_comments"
+        android:textColor="@color/textColor"
+        android:textSize="13sp"
+        />
+
+    <include
+        android:id="@+id/no_data"
+        layout="@layout/view_no_data_dynamic_comment"
+        android:visibility="gone"/>
+</LinearLayout>

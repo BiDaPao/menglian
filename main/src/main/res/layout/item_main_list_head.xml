@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="10dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <!--<com.yunbao.common.custom.RatioImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@mipmap/bg_list"-->
+    <!--android:translationY="-110dp"-->
+    <!--app:ri_ratio="1.13067"-->
+    <!--/>-->
+
+    <FrameLayout
+        android:id="@+id/item_1"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/data_group_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/avatar_1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/no1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/avatar_1"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/no1"
+                    android:translationY="10dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@id/no1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:gravity="center_horizontal|bottom"
+                />
+
+            <LinearLayout
+                android:id="@+id/group_1"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_below="@id/name_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                >
+
+                <ImageView
+                    android:id="@+id/sex_1"
+                    android:layout_width="18dp"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/level_1"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <com.aihuan.common.custom.DrawableTextView
+                android:id="@+id/votes_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/group_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="11111"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:dt_left_drawable="@mipmap/icon_coin"
+                app:dt_left_height="12sp"
+                app:dt_left_width="12sp"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/item_2"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/data_group_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/avatar_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/no2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/avatar_2"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/no2"
+                    android:translationY="10dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@id/no2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/group_2"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_below="@id/name_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                >
+
+                <ImageView
+                    android:id="@+id/sex_2"
+                    android:layout_width="18dp"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/level_2"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <com.aihuan.common.custom.DrawableTextView
+                android:id="@+id/votes_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/group_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:dt_left_drawable="@mipmap/icon_coin"
+                app:dt_left_height="12sp"
+                app:dt_left_width="12sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_data_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@mipmap/icon_main_list_no_data"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/main_list_no_data_2"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/item_3"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/data_group_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/avatar_3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/no3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/avatar_3"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/no3"
+                    android:translationY="10dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@id/no3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/group_3"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_below="@id/name_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                >
+
+                <ImageView
+                    android:id="@+id/sex_3"
+                    android:layout_width="18dp"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/level_3"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+            <com.aihuan.common.custom.DrawableTextView
+                android:id="@+id/votes_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/group_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:dt_left_drawable="@mipmap/icon_coin"
+                app:dt_left_height="12sp"
+                app:dt_left_width="12sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_data_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@mipmap/icon_main_list_no_data"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/main_list_no_data_2"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>

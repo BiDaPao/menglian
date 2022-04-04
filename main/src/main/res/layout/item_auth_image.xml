@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aihuan.main.custom.UploadImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="178dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical"
+    app:uiv_add_icon="@mipmap/icon_auth_add"
+    app:uiv_add_size="20dp"
+    app:uiv_bg_color="@color/background"
+    app:uiv_del_icon="@mipmap/icon_auth_del"
+    app:uiv_del_size="24dp"
+    />

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+<!--    <com.youth.banner.Banner-->
+<!--        android:id="@+id/banner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="120dp"-->
+<!--        app:delay_time="3000"-->
+<!--        app:image_scale_type="fit_xy"-->
+<!--        app:indicator_drawable_selected="@drawable/bg_home_indicator_selected"-->
+<!--        app:indicator_drawable_unselected="@drawable/bg_home_indicator_unselected"-->
+<!--        app:indicator_height="8dp"-->
+<!--        app:indicator_margin="6dp"-->
+<!--        app:indicator_width="8dp"-->
+<!--        />-->
+
+    <FrameLayout
+        android:id="@+id/rank_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_rank"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/icon_cup"/>
+
+            <ImageView
+                android:tint="#c8c8c8"
+                android:layout_marginRight="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="7dp"
+                android:src="@mipmap/icon_arrow_right"/>
+
+            <com.aihuan.common.custom.UPMarqueeView
+                android:id="@+id/upMarqueeView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>
+

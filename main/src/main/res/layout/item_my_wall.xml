@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aihuan.common.custom.MyFrameLayout2
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginBottom="2dp"
+    app:mfl_ratio="1.32"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <com.aihuan.common.custom.RatioImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:src="@mipmap/icon_video_home_bottom"
+        app:ri_ratio="0.48387"
+        />
+
+    <ImageView
+        android:id="@+id/icon_play"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/o_wall_play"
+        />
+
+</com.aihuan.common.custom.MyFrameLayout2>

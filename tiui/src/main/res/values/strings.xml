@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mode_cute">Cute</string>
+
+    <string name="skin_precise">Ultra</string>
+    <string name="skin_sharpness">Clear</string>
+
+    <string name="ti_face_trim_off">Off</string>
+    <string name="ti_face_trim_on">On</string>
+
+    <string name="category_face"></string>
+    <string name="category_eye"></string>
+    <string name="category_nose"></string>
+    <string name="category_mouth"></string>
+    <string name="category_brow"></string>
+
+    <string name="category_nature"></string>
+    <string name="category_clear"></string>
+    <string name="category_vigour"></string>
+    <string name="category_senior"></string>
+    <string name="category_atmosphere"></string>
+    <string name="category_food"></string>
+    <string name="category_holiday"></string>
+    <string name="category_film"></string>
+
+    <string name="face_shape">Face</string>
+    <string name="classic">Classic</string>
+    <string name="square_face">Square</string>
+    <string name="long_face">Long</string>
+    <string name="round_face">Round</string>
+    <string name="thin_face">Thin</string>
+
+    <string name="quick_beauty">Style</string>
+    <string name="standard">Standard</string>
+    <string name="delicate">Delicate</string>
+    <string name="cute">Cute</string>
+    <string name="celebrity">Celebrity</string>
+    <string name="natural">Natural</string>
+    <string name="lolita">Lolita</string>
+    <string name="elegant">Elegant</string>
+    <string name="first_love">First Love</string>
+    <string name="goddess">Goddess</string>
+    <string name="senior">Senior</string>
+    <string name="low_end">Low End </string>
+
+    <string name="makeup">Makeup</string>
+    <string name="makeup_on">On</string>
+    <string name="makeup_off">Off</string>
+    <string name="blusher">Blusher</string>
+    <string name="eyelash">Eyelash</string>
+    <string name="eyebrow">Eyebrow</string>
+    <string name="eyeshadow">Eyeshadow</string>
+    <string name="eyeline">Eyeliner</string>
+
+    <string name="qingse">Youthful</string>
+    <string name="riza">MAG Vibe</string>
+    <string name="tiancheng">Sweet Orange</string>
+    <string name="youya">Eegant</string>
+    <string name="weixun">Tipsy</string>
+    <string name="xindong">Cardiac</string>
+
+    <string name="ziran">Natural</string>
+    <string name="rouhe">Soft</string>
+    <string name="nongmi">Thick</string>
+    <string name="meihuo">Charm</string>
+    <string name="babi">Barbie</string>
+    <string name="wumei">Sexy</string>
+
+    <string name="biaozhunmei">EB-1</string>
+    <string name="jianmei">EB-2</string>
+    <string name="liuyemei">EB-3</string>
+    <string name="pingzhimei">EB-4</string>
+    <string name="liuxingmei">EB-5</string>
+    <string name="oushimei">EB-6</string>
+
+    <string name="gexing">Personality</string>
+    <string name="meihei">Black</string>
+    <string name="qingqiao">Light</string>
+    <string name="rouhua">Slide</string>
+    <string name="shensui">Deep</string>
+    <string name="suyan">Without Makeup</string>
+    <string name="wugu">Innocent</string>
+
+    <string name="dadi">Land</string>
+    <string name="nvtuan">Idol Team</string>
+    <string name="taohua">Peach Blossom</string>
+    <string name="xiari">Summer</string>
+    <string name="yanxun">Smoky</string>
+    <string name="yuanqi">Vitality</string>
+
+    <string name="filter_suyan">Without Makeup</string>
+    <string name="filter_feiying">Pink Sakura</string>
+    <string name="filter_qianxing">Shallow</string>
+    <string name="filter_qiangwei">Rose</string>
+    <string name="filter_qingning">Lemon</string>
+    <string name="filter_zhenzhu">Pearl</string>
+    <string name="filter_nuanchun">Warm Spring</string>
+
+    <string name="filter_qingxi">Clear</string>
+    <string name="filter_niunai">Milk</string>
+    <string name="filter_shuiwu">Water Mist</string>
+    <string name="filter_yanxi">Salt</string>
+    <string name="filter_shuiguang">Water Light</string>
+    <string name="filter_naixing">Almond Milk</string>
+
+    <string name="filter_shaonv">Girl</string>
+    <string name="filter_baitao">White Peach</string>
+    <string name="filter_rixi">Jp</string>
+    <string name="filter_fenxia">Pink Summer</string>
+    <string name="filter_tianmei">Sweet</string>
+    <string name="filter_naiyou">Cream</string>
+    <string name="filter_riza">Jp Mag</string>
+    <string name="filter_naiyoumitao">Cream Peach</string>
+    <string name="filter_juziqishui">Orange Soda</string>
+
+    <string name="filter_huidiao">Grey</string>
+    <string name="filter_lengdan">Cold</string>
+    <string name="filter_huayan">Flower Face</string>
+    <string name="filter_zhigan">Simple Sense</string>
+    <string name="filter_jizhou">Jeju</string>
+
+    <string name="filter_youhua1">Oil PaintingⅠ</string>
+    <string name="filter_youhua2">Oil PaintingⅡ</string>
+    <string name="filter_senxi">Sen Department</string>
+    <string name="filter_zhongxiameng">Midsummer Night</string>
+
+    <string name="filter_meiwei">Delicious</string>
+    <string name="filter_xinxian">Fresh</string>
+    <string name="filter_mitaowulong">Peach Oolong</string>
+    <string name="filter_nuanshi">Warm Food</string>
+    <string name="filter_shenyeshitang">Late Night Canteen</string>
+
+    <string name="filter_xiari">Summer</string>
+    <string name="filter_nuanyang">Warm Sun</string>
+    <string name="filter_zhaohe">Showa</string>
+    <string name="filter_boshidun">Boston</string>
+
+    <string name="filter_pailide">Polaroid</string>
+    <string name="filter_huiyi">Memory</string>
+    <string name="filter_fanchase">Contrast Color</string>
+    <string name="filter_fugu">Retro</string>
+    <string name="filter_huaijiu">Nostalgia</string>
+    <string name="filter_heibai">Black And White</string>
+
+    <string name="green_screen_similarity">Similarity</string>
+    <string name="green_screen_smoothness">Smoothness</string>
+    <string name="green_screen_alpha">Transparency</string>
+    <string name="green_screen_restore">Restore</string>
+
+    <string name="filter_no">Original</string>
+    <string name="rock_no">Original</string>
+    <string name="distortion_no">Original</string>
+    <string name="hair_no">Original</string>
+
+    <string name="reset">Reset</string>
+    <string name="is_reset_all_params_to_default">Are you sure to restore all parameter values to default?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="none">None</string>
+
+    <string name="interaction">Interactive</string>
+    <string name="gesture">Gesture</string>
+    <string name="jawbone_slimming">Thin Jaw</string>
+    <string name="brow_corner">Eyebrow Peak</string>
+
+    <string name="skin_whitening">Whitening</string>
+    <string name="skin_blemish_removal">Smooth</string>
+    <string name="skin_saturation">Saturated</string>
+    <string name="skin_tenderness">Tender</string>
+
+    <string name="skin_brightness">Bright</string>
+
+    <string name="face_trim">Face </string>
+    <string name="beauty">Retouch</string>
+    <string name="eye_magnifying">Resize</string>
+    <string name="chin_slimming">Cheeks</string>
+    <string name="jaw_transforming">Chin</string>
+    <string name="forehead_transforming">Forehead</string>
+    <string name="mouth_transforming">Mouth Type</string>
+    <string name="nose_minifying">Thin Nose</string>
+    <string name="teeth_whitening">White Teeth</string>
+    <string name="face_narrowing">V-Shape</string>
+    <string name="eye_spacing">Distance</string>
+    <string name="nose_elongating">Long Nose</string>
+    <string name="eye_corners">Eye Corners</string>
+    <string name="eye_inner_corners">Inner Eye</string>
+    <string name="eye_outer_corners">Eye end</string>
+    <string name="cheekbone_slimming">Cheekbones</string>
+    <string name="mouth_smiling">Mouth Smiling</string>
+    <string name="mouth_height">Mouth Height</string>
+    <string name="mouth_lip_size">Mouth Lip Size</string>
+    <string name="brow_height">Brow Height</string>
+    <string name="brow_length">Brow Length</string>
+    <string name="brow_space">Brow Space</string>
+    <string name="brow_size">Brow Size</string>
+    <string name="jaw_slimming">Jaw Slimming</string>
+
+    <string name="rock">Rock</string>
+    <string name="filter">Filter</string>
+    <string name="distortion">Distortion</string>
+    <string name="sticker">Sticker</string>
+    <string name="gift">Gift</string>
+    <string name="mask">Mask</string>
+    <string name="watermark">Watermark</string>
+    <string name="green_screen">GreenScreen</string>
+    <string name="portrait">Portrait</string>
+    <string name="hair">Hair</string>
+
+    <string name="rock_dazzled_color">Dazzled Color</string>
+    <string name="rock_light_color">Light Color</string>
+    <string name="rock_dizzy_giddy">Dizzy Giddy</string>
+    <string name="rock_astral_projection">Soul</string>
+    <string name="rock_black_magic">Black Magic</string>
+    <string name="rock_virtual_mirror">Virtual Mirror</string>
+    <string name="rock_dynamic_split">Dynamic Split</string>
+    <string name="rock_black_white_film">Black White Film</string>
+    <string name="rock_gray_petrifaction">Petrifaction</string>
+    <string name="rock_bulge_distortion">Magic Mirror</string>
+
+    <string name="onekey_beauty_standard">Standard</string>
+    <string name="onekey_beauty_delicate">Delicate</string>
+    <string name="onekey_beauty_lovely">Lovely</string>
+    <string name="onekey_beauty_internet_celebrity">Celebrity</string>
+    <string name="onekey_beauty_natural">Nature</string>
+    <string name="onekey_beauty_lolita">Lolita</string>
+    <string name="onekey_beauty_elegant">Elegant</string>
+    <string name="onekey_beauty_first_love">FirstLove</string>
+    <string name="onekey_beauty_godness">Godness</string>
+    <string name="onekey_beauty_advanced">Advanced</string>
+    <string name="onekey_beauty_low_end">Low End</string>
+
+    <string name="face_shape_classic">Classic</string>
+    <string name="face_shape_square">Square Face</string>
+    <string name="face_shape_long">Long Face</string>
+    <string name="face_shape_rounded">Round Face</string>
+    <string name="face_shape_slim">Slim Face</string>
+
+    <string name="filter_sketch">Sketch</string>
+    <string name="filter_sobel_edge">Black Border</string>
+    <string name="filter_cartoon">Cartoon</string>
+    <string name="filter_emboss">Emboss</string>
+    <string name="filter_film">Film</string>
+    <string name="filter_pixelation">Pixellation</string>
+    <string name="filter_halftone">Halftone</string>
+    <string name="filter_crosshatch">Cross Line</string>
+    <string name="filter_nashville">Early Summer</string>
+    <string name="filter_coffee">Coffee</string>
+    <string name="filter_chocolate">Chocolate</string>
+    <string name="filter_coco">Coco</string>
+    <string name="filter_delicious">Sweetheart</string>
+    <string name="filter_first_love">FirstLove</string>
+    <string name="filter_forest">Forest</string>
+    <string name="filter_glossy">Glossy</string>
+    <string name="filter_grass">Grass</string>
+    <string name="filter_holiday">Holiday</string>
+    <string name="filter_kiss">First Kiss</string>
+    <string name="filter_lolita">Lolita</string>
+    <string name="filter_memory">Memory</string>
+    <string name="filter_mousse">Mousse</string>
+    <string name="filter_normal">Benchmark</string>
+    <string name="filter_oxgen">Oxgen</string>
+    <string name="filter_platycodon">Platycodon</string>
+    <string name="filter_red">Red</string>
+    <string name="filter_sunless">Cold day</string>
+    <string name="filter_pinch_distortion">Distortion</string>
+    <string name="filter_kuwahara">Painting</string>
+    <string name="filter_posterize">Color Separation</string>
+    <string name="filter_swirl_distortion">Swirl</string>
+    <string name="filter_vignette">Halo</string>
+    <string name="filter_zoom_blur">Dizziness</string>
+    <string name="filter_polka_dot">Dots</string>
+    <string name="filter_polar_pixellate">Polar Coordinates</string>
+    <string name="filter_glass_sphere_refraction">Crystal Ball</string>
+    <string name="filter_solarize">Exposure</string>
+    <string name="filter_ink_wash_painting">Ink  Wash</string>
+    <string name="filter_arabica">Old</string>
+    <string name="filter_ava">Milk Tea</string>
+    <string name="filter_azreal">Naturel</string>
+    <string name="filter_bourbon">French</string>
+    <string name="filter_byers">Peach</string>
+    <string name="filter_chemical">Retro</string>
+    <string name="filter_clayton">Black White Grid</string>
+    <string name="filter_clouseau">Beaty Face</string>
+    <string name="filter_cobi">High-grade Grey</string>
+    <string name="filter_contrail">Carmel</string>
+    <string name="filter_cubicle">Dreamland</string>
+    <string name="filter_django">Tea</string>
+
+    <string name="distortion_et">ET</string>
+    <string name="distortion_pear_face">Pear</string>
+    <string name="distortion_slim_face">Slim</string>
+    <string name="distortion_square_face">Square</string>
+
+    <string name="makeup_no">None</string>
+    <string name="makeup_eye_brow">EyeBrow</string>
+    <string name="makeup_eye_lash">EyeLash</string>
+    <string name="makeup_blusher">Blusher</string>
+    <string name="makeup_eye_shadow">EyeShadow</string>
+    <string name="makeup_eye_line">EyeLine</string>
+
+    <string name="ti_beauty_on">On</string>
+    <string name="ti_beauty_off">Off</string>
+    <string name="ti_body_shaping_on">On</string>
+    <string name="ti_body_shaping_off">On</string>
+
+    <string name="hair_my_purple">Purple</string>
+    <string name="hair_chocolate">Chocolate</string>
+    <string name="hair_aj_brown">Aoki Brown</string>
+    <string name="hair_ca_brown">Caramel Brown</string>
+    <string name="hair_hon_brown">Honey Brown</string>
+    <string name="hair_ltg_brown">Light Golden Brown</string>
+    <string name="hair_rose_gold">Rose Gold</string>
+    <string name="hair_fw_gold">Linen Platinum</string>
+    <string name="hair_ss_orange">Sunset</string>
+    <string name="hair_fl_orange">Flax Light</string>
+    <string name="hair_vintage_rose">Vintage Rose</string>
+    <string name="hair_tender_rose">Deep Rose</string>
+    <string name="hair_mg_purple">Gray Purple</string>
+    <string name="hair_spr_brown">Pink Brown</string>
+    <string name="hair_frog_taro">Haze Taro</string>
+    <string name="hair_peacock_blue">Peacock Blue</string>
+    <string name="hair_fb_gray">Blue Gray</string>
+    <string name="hair_fg_brown">Linen Grey Brown</string>
+    <string name="hair_fl_gray">Linen Light Gray</string>
+
+    <!-- 新增-->
+    <string name="lux_beauty">Advanced Beauty</string>
+    <string name="skin_cows_feet">Crow\'s Feet</string>
+    <string name="lip_gloss">Lip Gloss</string>
+    <string name="pingguohong">Apple Red</string>
+    <string name="fanqiehong">Tomato Red</string>
+    <string name="zhanlan">Blue</string>
+    <string name="rouguimicha">Rice Tea</string>
+    <string name="zhenghongse">Red</string>
+    <string name="skin_grinding">Fine Grinding</string>
+    <string name="small_shaping">Micro Shaping</string>
+    <string name="skin_precise_tenderness">Delicate Pink</string>
+    <string name="skin_nasolabial_fold">Legal Pattern</string>
+    <string name="skin_dark_circle">Dark Circles</string>
+    <string name="high_light">Stereoscopic</string>
+    <string name="rock_vision_shadow">Hallucinations</string>
+    <string name="rock_neon_light">Neon</string>
+    <string name="rock_reflection_mirror">Reflector</string>
+    <string name="rock_four_mirror">Four Screen Mirror</string>
+    <string name="rock_fuzzy_border">Border Fuzzy</string>
+    <string name="rock_fuzzy_split_screen">Blur Screen</string>
+    <string name="rock_four_grid_view">Quarter Screen</string>
+    <string name="rock_nine_grid_view">Sudoku</string>
+    <!-- End-->
+</resources>

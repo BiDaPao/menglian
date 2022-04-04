@@ -1,0 +1,2063 @@
+[
+  {
+    "name": "app",
+    "des": "入口模块",
+    "level": 0,
+    "child": [
+      {
+        "name": "activity",
+        "des": "activity",
+        "level": 1,
+        "child": [
+          {
+            "name": "LauncherActivity",
+            "des": "启动页",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "wxapi",
+        "des": "微信sdk",
+        "level": 1,
+        "child": [
+          {
+            "name": "WXEntryActivity",
+            "des": "微信登录回调",
+            "level": 2
+          },
+          {
+            "name": "WXPayEntryActivity",
+            "des": "微信支付回调",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "AppContext",
+        "des": "Application",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "name": "beauty",
+    "des": "美颜模块",
+    "level": 0,
+    "child": [
+      {
+        "name": "adapter",
+        "des": "RecyclerView适配器",
+        "level": 1,
+        "child": [
+          {
+            "name": "FilterAdapter",
+            "des": "滤镜",
+            "level": 2
+          },
+          {
+            "name": "RockAdapter",
+            "des": "抖动",
+            "level": 2
+          },
+          {
+            "name": "TieZhiAdapter",
+            "des": "贴纸",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "bean",
+        "des": "实体类",
+        "level": 1,
+        "child": [
+          {
+            "name": "FilterBean",
+            "des": "滤镜",
+            "level": 2
+          },
+          {
+            "name": "RockBean",
+            "des": "抖动",
+            "level": 2
+          },
+          {
+            "name": "TieZhiBean",
+            "des": "贴纸",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "custom",
+        "des": "自定义控件",
+        "level": 1,
+        "child": [
+          {
+            "name": "MyRadioButton",
+            "des": "自定义RadioButton",
+            "level": 2
+          },
+          {
+            "name": "TextSeekBar",
+            "des": "带有文字的SeekBar",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "interfaces",
+        "des": "接口",
+        "level": 1,
+        "child": [
+          {
+            "name": "BeautyEffectListener",
+            "des": "美颜效果回调接口",
+            "level": 2
+          },
+          {
+            "name": "BeautyViewHolder",
+            "des": "美颜控件接口",
+            "level": 2
+          },
+          {
+            "name": "DefaultBeautyEffectListener",
+            "des": "默认美颜效果回调接口",
+            "level": 2
+          },
+          {
+            "name": "TiBeautyEffectListener",
+            "des": "高级美颜效果回调接口",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "views",
+        "des": "视图组件",
+        "level": 1,
+        "child": [
+          {
+            "name": "DefaultBeautyViewHolder",
+            "des": "默认美颜效果组件",
+            "level": 2
+          },
+          {
+            "name": "TiBeautyViewHolder",
+            "des": "高级美颜效果组件",
+            "level": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "common",
+    "des": "通用模块",
+    "level": 0,
+    "child": [
+      {
+        "name": "activity",
+        "des": "activity",
+        "level": 1,
+        "child": [
+          {
+            "name": "AbsActivity",
+            "des": "Activity基类",
+            "level": 2
+          },
+          {
+            "name": "ErrorActivity",
+            "des": "错误页面",
+            "level": 2
+          },
+          {
+            "name": "WebViewActivity",
+            "des": "html页面",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "adapter",
+        "des": "RecyclerView适配器",
+        "level": 1,
+        "child": [
+          {
+            "name": "CommonShareAdapter",
+            "des": "分享",
+            "level": 2
+          },
+          {
+            "name": "ImChatFacePagerAdapter",
+            "des": "聊天表情",
+            "level": 2
+          },
+          {
+            "name": "ImChatFacePagerAdapter",
+            "des": "聊天表情",
+            "level": 2
+          },
+          {
+            "name": "PriceTipAdapter",
+            "des": "聊天价格",
+            "level": 2
+          },
+          {
+            "name": "RefreshAdapter",
+            "des": "RecyclerView适配器",
+            "level": 2
+          },
+          {
+            "name": "ViewPagerAdapter",
+            "des": "ViewPager适配器",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "bean",
+        "des": "实体类",
+        "level": 1,
+        "child": [
+          {
+            "name": "ChargeSuccessBean",
+            "des": "充值成功",
+            "level": 2
+          },
+          {
+            "name": "ChatAnchorParam",
+            "des": "主播通话",
+            "level": 2
+          },
+          {
+            "name": "ChatAudienceParam",
+            "des": "观众通话",
+            "level": 2
+          },
+          {
+            "name": "ChatGiftBean",
+            "des": "礼物",
+            "level": 2
+          },
+          {
+            "name": "ChatReceiveGiftBean",
+            "des": "礼物",
+            "level": 2
+          },
+          {
+            "name": "ChatPriceBean",
+            "des": "通话价格",
+            "level": 2
+          },
+          {
+            "name": "ChatPriceTipBean",
+            "des": "通话价格",
+            "level": 2
+          },
+          {
+            "name": "CoinBean",
+            "des": "货币",
+            "level": 2
+          },
+          {
+            "name": "ConfigBean",
+            "des": "全局配置",
+            "level": 2
+          },
+          {
+            "name": "TxLocationBean",
+            "des": "定位信息",
+            "level": 2
+          },
+          {
+            "name": "TxLocationPoiBean",
+            "des": "定位信息",
+            "level": 2
+          },
+          {
+            "name": "UserBean",
+            "des": "用户信息",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "custom",
+        "des": "自定义控件",
+        "level": 1,
+        "child": [
+          {
+            "name": "CommonRefreshView",
+            "des": "自定义下拉刷新",
+            "level": 2
+          },
+          {
+            "name": "DrawableCheckBox",
+            "des": "带有图片的CheckBox",
+            "level": 2
+          },
+          {
+            "name": "DrawableRadioButton",
+            "des": "带有图片的RadioButton",
+            "level": 2
+          },
+          {
+            "name": "DrawableRadioButton2",
+            "des": "带有图片的RadioButton",
+            "level": 2
+          },
+          {
+            "name": "DrawableTextView",
+            "des": "带有图片的TextView",
+            "level": 2
+          },
+          {
+            "name": "FixAppBarLayoutBehavior",
+            "des": "修复AppBarLayout",
+            "level": 2
+          },
+          {
+            "name": "ItemDecoration",
+            "des": "RecyclerView分割线",
+            "level": 2
+          },
+          {
+            "name": "ItemSlideHelper",
+            "des": "RecyclerView左滑删除",
+            "level": 2
+          },
+          {
+            "name": "MarqueeTextView",
+            "des": "跑马灯TextView",
+            "level": 2
+          },
+          {
+            "name": "MyFrameLayout2",
+            "des": "自定义FrameLayout",
+            "level": 2
+          },
+          {
+            "name": "MyFrameLayout3",
+            "des": "自定义FrameLayout",
+            "level": 2
+          },
+          {
+            "name": "MyFrameLayout4",
+            "des": "自定义FrameLayout",
+            "level": 2
+          },
+          {
+            "name": "MyRadioButton",
+            "des": "自定义RadioButton",
+            "level": 2
+          },
+          {
+            "name": "MyViewPager",
+            "des": "自定义ViewPager",
+            "level": 2
+          },
+          {
+            "name": "ProgressTextView3",
+            "des": "带进度的TextView",
+            "level": 2
+          },
+          {
+            "name": "RatioImageView",
+            "des": "固定宽高比的ImageView",
+            "level": 2
+          },
+          {
+            "name": "RatioRoundImageView",
+            "des": "固定宽高比带圆角的ImageView",
+            "level": 2
+          },
+          {
+            "name": "SquareImageView",
+            "des": "正方形的ImageView",
+            "level": 2
+          },
+          {
+            "name": "TabButton",
+            "des": "导航条切换按钮",
+            "level": 2
+          },
+          {
+            "name": "TabButtonGroup",
+            "des": "导航条",
+            "level": 2
+          },
+          {
+            "name": "VerticalImageSpan",
+            "des": "垂直的ImageSpan",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "dialog",
+        "des": "弹窗",
+        "level": 1,
+        "child": [
+          {
+            "name": "AbsDialogFragment",
+            "des": "DialogFragment抽象类",
+            "level": 2
+          },
+          {
+            "name": "ChatFaceDialog",
+            "des": "聊天表情弹窗",
+            "level": 2
+          },
+          {
+            "name": "ProgressDialog",
+            "des": "进度弹窗",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "event",
+        "des": "EventBus 事件",
+        "level": 1,
+        "child": [
+          {
+            "name": "BlackEvent",
+            "des": "拉黑事件",
+            "level": 2
+          },
+          {
+            "name": "CoinChangeEvent",
+            "des": "充值事件",
+            "level": 2
+          },
+          {
+            "name": "FollowEvent",
+            "des": "关注事件",
+            "level": 2
+          },
+          {
+            "name": "LocationEvent",
+            "des": "定位成功事件",
+            "level": 2
+          },
+          {
+            "name": "LoginInvalidEvent",
+            "des": "登录失效事件",
+            "level": 2
+          },
+          {
+            "name": "LoginSuccessEvent",
+            "des": "登录成功事件",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "fragment",
+        "des": "fragment",
+        "level": 1,
+        "child": [
+          {
+            "name": "ProcessFragment",
+            "des": "权限请求和ActivityForResult封装",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "glide",
+        "des": "图片加载",
+        "level": 1,
+        "child": [
+          {
+            "name": "ImgLoader",
+            "des": "Glide封装",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "http",
+        "des": "网络请求",
+        "level": 1,
+        "child": [
+          {
+            "name": "CommonHttpConsts",
+            "des": "常量",
+            "level": 2
+          },
+          {
+            "name": "CommonHttpUtil",
+            "des": "网络请求工具",
+            "level": 2
+          },
+          {
+            "name": "Data",
+            "des": "服务端返回json结构",
+            "level": 2
+          },
+          {
+            "name": "HttpCallback",
+            "des": "网络请求回调",
+            "level": 2
+          },
+          {
+            "name": "HttpClient",
+            "des": "OkHttpClient封装",
+            "level": 2
+          },
+          {
+            "name": "HttpLoggingInterceptor",
+            "des": "网络请求Log打印工具",
+            "level": 2
+          },
+          {
+            "name": "JsonBean",
+            "des": "服务端返回json结构",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "interfaces",
+        "des": "接口",
+        "level": 1,
+        "child": [
+          {
+            "name": "ActivityResultCallback",
+            "des": "ActivityForResult回调",
+            "level": 2
+          },
+          {
+            "name": "CommonCallback",
+            "des": "通用回调，可添加一个对象",
+            "level": 2
+          },
+          {
+            "name": "ImageResultCallback",
+            "des": "获取图片回调",
+            "level": 2
+          },
+          {
+            "name": "KeyBoardHeightChangeListener",
+            "des": "键盘高度监听",
+            "level": 2
+          },
+          {
+            "name": "LifeCycleListener",
+            "des": "Activity生命周期监听",
+            "level": 2
+          },
+          {
+            "name": "OnFaceClickListener",
+            "des": "表情点击事件",
+            "level": 2
+          },
+          {
+            "name": "OnItemClickListener",
+            "des": "RecyclerView item点击事件",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "mob",
+        "des": "mob 三方登录分享",
+        "level": 1,
+        "child": [
+          {
+            "name": "LoginData",
+            "des": "登录数据",
+            "level": 2
+          },
+          {
+            "name": "MobBean",
+            "des": "Mob实体类",
+            "level": 2
+          },
+          {
+            "name": "MobCallback",
+            "des": "登录分享回调",
+            "level": 2
+          },
+          {
+            "name": "MobConst",
+            "des": "常量",
+            "level": 2
+          },
+          {
+            "name": "MobLoginUtil",
+            "des": "登录工具类",
+            "level": 2
+          },
+          {
+            "name": "MobShareUtil",
+            "des": "分享工具类",
+            "level": 2
+          },
+          {
+            "name": "ShareData",
+            "des": "分享数据",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "pay",
+        "des": "支付",
+        "level": 1,
+        "child": [
+          {
+            "name": "ali",
+            "des": "支付宝",
+            "level": 2
+          },
+          {
+            "name": "wx",
+            "des": "微信支付",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "des": "工具类",
+        "level": 1,
+        "child": [
+          {
+            "name": "BitmapUtil",
+            "des": "Bitmap工具类",
+            "level": 2
+          },
+          {
+            "name": "CityUtil",
+            "des": "城市列表",
+            "level": 2
+          },
+          {
+            "name": "ClickUtil",
+            "des": "判断点击间隔",
+            "level": 2
+          },
+          {
+            "name": "CommonIconUtil",
+            "des": "获取图片",
+            "level": 2
+          },
+          {
+            "name": "DateFormatUtil",
+            "des": "日期时间格式化",
+            "level": 2
+          },
+          {
+            "name": "DialogUitl",
+            "des": "弹窗工具",
+            "level": 2
+          },
+          {
+            "name": "DownloadUtil",
+            "des": "下载",
+            "level": 2
+          },
+          {
+            "name": "DpUtil",
+            "des": "dp转px",
+            "level": 2
+          },
+          {
+            "name": "FaceUtil",
+            "des": "表情图片",
+            "level": 2
+          },
+          {
+            "name": "GlideCatchUtil",
+            "des": "glide缓存",
+            "level": 2
+          },
+          {
+            "name": "KeyBoardHeightUtil",
+            "des": "获取键盘高度",
+            "level": 2
+          },
+          {
+            "name": "L",
+            "des": "打印log",
+            "level": 2
+          },
+          {
+            "name": "LocationUtil",
+            "des": "定位",
+            "level": 2
+          },
+          {
+            "name": "MD5Util",
+            "des": "md5加密",
+            "level": 2
+          },
+          {
+            "name": "ProcessImageUtil",
+            "des": "获取拍照相册图片",
+            "level": 2
+          },
+          {
+            "name": "ProcessResultUtil",
+            "des": "ActivtyForResult回调",
+            "level": 2
+          },
+          {
+            "name": "RouteUtil",
+            "des": "路由工具",
+            "level": 2
+          },
+          {
+            "name": "ScreenDimenUtil",
+            "des": "屏幕尺寸工具",
+            "level": 2
+          },
+          {
+            "name": "SpUtil",
+            "des": "SharedPreferences工具",
+            "level": 2
+          },
+          {
+            "name": "StringUtil",
+            "des": "字符串处理",
+            "level": 2
+          },
+          {
+            "name": "ToastUtil",
+            "des": "Toast工具",
+            "level": 2
+          },
+          {
+            "name": "ValidatePhoneUtil",
+            "des": "验证手机号码",
+            "level": 2
+          },
+          {
+            "name": "VersionUtil",
+            "des": "获取App版本号",
+            "level": 2
+          },
+          {
+            "name": "WordUtil",
+            "des": "获取 strings.xml 文字",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "views",
+        "des": "视图组件",
+        "level": 1,
+        "child": [
+          {
+            "name": "AbsViewHolder",
+            "des": "视图组件抽象类",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "CommonAppConfig",
+        "des": "通用配置",
+        "level": 1
+      },
+      {
+        "name": "CommonAppContext",
+        "des": "通用Application",
+        "level": 1
+      },
+      {
+        "name": "Constants",
+        "des": "常量",
+        "level": 1
+      },
+      {
+        "name": "HtmlConfig",
+        "des": "Html配置",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "name": "im",
+    "des": "腾讯IM聊天模块",
+    "level": 0,
+    "child": [
+      {
+        "name": "activity",
+        "des": "activity",
+        "level": 1,
+        "child": [
+          {
+            "name": "ChatActivity",
+            "des": "聊天页面",
+            "level": 2
+          },
+          {
+            "name": "ChatChooseImageActivity",
+            "des": "聊天发送图片选择",
+            "level": 2
+          },
+          {
+            "name": "ChatRoomActivity",
+            "des": "聊天页面",
+            "level": 2
+          },
+          {
+            "name": "LocationActivity",
+            "des": "聊天发送位置",
+            "level": 2
+          },
+          {
+            "name": "SystemMessageActivity",
+            "des": "系统消息",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "adapter",
+        "des": "RecyclerView适配器",
+        "level": 1,
+        "child": [
+          {
+            "name": "ChatImagePreviewAdapter",
+            "des": "图片预览",
+            "level": 2
+          },
+          {
+            "name": "ImChatChooseImageAdapter",
+            "des": "图片预览",
+            "level": 2
+          },
+          {
+            "name": "ImListAdapter",
+            "des": "聊天会话列表",
+            "level": 2
+          },
+          {
+            "name": "ImRoomAdapter",
+            "des": "聊天消息列表",
+            "level": 2
+          },
+          {
+            "name": "LocationAdapter",
+            "des": "发送位置列表",
+            "level": 2
+          },
+          {
+            "name": "SystemMessageAdapter",
+            "des": "系统消息列表",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "bean",
+        "des": "实体类",
+        "level": 1,
+        "child": [
+          {
+            "name": "ChatChooseImageBean",
+            "des": "选择图片",
+            "level": 2
+          },
+          {
+            "name": "ImChatImageBean",
+            "des": "聊天图片",
+            "level": 2
+          },
+          {
+            "name": "ImMessageBean",
+            "des": "聊天消息实体类",
+            "level": 2
+          },
+          {
+            "name": "ImUserBean",
+            "des": "聊天用户实体类",
+            "level": 2
+          },
+          {
+            "name": "SystemMessageBean",
+            "des": "系统消息实体类",
+            "level": 2
+          },
+          {
+            "name": "TimeInfo",
+            "des": "时间实体类",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "custom",
+        "des": "自定义控件",
+        "level": 1,
+        "child": [
+          {
+            "name": "BubbleLayout",
+            "des": "聊天气泡",
+            "level": 2
+          },
+          {
+            "name": "ChatVoiceLayout",
+            "des": "发送语音",
+            "level": 2
+          },
+          {
+            "name": "MyImageView",
+            "des": "自定义ImageView",
+            "level": 2
+          },
+          {
+            "name": "MyRelativeLayout",
+            "des": "自定义RelativeLayout",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "dialog",
+        "des": "弹窗",
+        "level": 1,
+        "child": [
+          {
+            "name": "ChatImageDialog",
+            "des": "聊天图片弹窗",
+            "level": 2
+          },
+          {
+            "name": "ChatMoreDialog",
+            "des": "聊天更多弹窗",
+            "level": 2
+          },
+          {
+            "name": "ChatVoiceInputDialog",
+            "des": "聊天语音弹窗",
+            "level": 2
+          },
+          {
+            "name": "SystemMessageDialogFragment",
+            "des": "系统消息",
+            "level": 2
+          },
+          {
+            "name": "UserMoreDialogFragment",
+            "des": "聊天用户更多弹窗",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "event",
+        "des": "EventBus 事件",
+        "level": 1,
+        "child": [
+          {
+            "name": "ChatLiveImEvent",
+            "des": "通话消息事件",
+            "level": 2
+          },
+          {
+            "name": "ImLoginEvent",
+            "des": "IM登录事件",
+            "level": 2
+          },
+          {
+            "name": "ImOffLineMsgEvent",
+            "des": "收到离线消息事件",
+            "level": 2
+          },
+          {
+            "name": "ImRoamMsgEvent",
+            "des": "收到漫游消息事件",
+            "level": 2
+          },
+          {
+            "name": "ImUnReadCountEvent",
+            "des": "收到未读消息事件",
+            "level": 2
+          },
+          {
+            "name": "ImUserMsgEvent",
+            "des": "收到普通消息事件",
+            "level": 2
+          },
+          {
+            "name": "SystemMsgEvent",
+            "des": "收到系统消息事件",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "http",
+        "des": "网络请求",
+        "level": 1,
+        "child": [
+          {
+            "name": "ImHttpConsts",
+            "des": "常量",
+            "level": 2
+          },
+          {
+            "name": "ImHttpUtil",
+            "des": "网络请求工具",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "interfaces",
+        "des": "接口",
+        "level": 1,
+        "child": [
+          {
+            "name": "ChatRoomActionListener",
+            "des": "聊天页面点击事件回调",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "des": "工具类",
+        "level": 1,
+        "child": [
+          {
+            "name": "ImageUtil",
+            "des": "图片工具",
+            "level": 2
+          },
+          {
+            "name": "ImDateUtil",
+            "des": "聊天时间工具",
+            "level": 2
+          },
+          {
+            "name": "ImMessageUtil",
+            "des": "聊天逻辑",
+            "level": 2
+          },
+          {
+            "name": "ImPushUtil",
+            "des": "推送工具",
+            "level": 2
+          },
+          {
+            "name": "ImTextRender",
+            "des": "富文本工具",
+            "level": 2
+          },
+          {
+            "name": "MediaRecordUtil",
+            "des": "录音工具",
+            "level": 2
+          },
+          {
+            "name": "VoiceMediaPlayerUtil",
+            "des": "语音播放",
+            "level": 2
+          },
+          {
+            "name": "TxImMessageUtil",
+            "des": "腾讯IM消息工具类",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "views",
+        "des": "视图组件",
+        "level": 1,
+        "child": [
+          {
+            "name": "ChatListViewHolder",
+            "des": "聊天会话列表",
+            "level": 2
+          },
+          {
+            "name": "ChatRoomViewHolder",
+            "des": "聊天室",
+            "level": 2
+          },
+          {
+            "name": "SystemMessageViewHolder",
+            "des": "系统消息",
+            "level": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main",
+    "des": "主模块",
+    "level": 0,
+    "child": [
+      {
+        "name": "activity",
+        "des": "activity",
+        "level": 1,
+        "child": [
+          {
+            "name": "AuthActivity",
+            "des": "认证",
+            "level": 2
+          },
+          {
+            "name": "BlackListActivity",
+            "des": "黑名单",
+            "level": 2
+          },
+          {
+            "name": "CashActivity",
+            "des": "选择联系人",
+            "level": 2
+          },
+          {
+            "name": "EditProfileActivity",
+            "des": "编辑资料",
+            "level": 2
+          },
+          {
+            "name": "FansActivity",
+            "des": "粉丝列表",
+            "level": 2
+          },
+          {
+            "name": "FollowActivity",
+            "des": "关注列表",
+            "level": 2
+          },
+          {
+            "name": "GiftCabActivity",
+            "des": "礼物柜",
+            "level": 2
+          },
+          {
+            "name": "ImpressActivity",
+            "des": "我的印象",
+            "level": 2
+          },
+          {
+            "name": "ImpressCalcActivity",
+            "des": "印象统计",
+            "level": 2
+          },
+          {
+            "name": "LoginActivity",
+            "des": "登录",
+            "level": 2
+          },
+          {
+            "name": "LoginInvalidActivity",
+            "des": "登录失效",
+            "level": 2
+          },
+          {
+            "name": "LoginPhoneActivity",
+            "des": "手机登录",
+            "level": 2
+          },
+          {
+            "name": "MainActivity",
+            "des": "首页",
+            "level": 2
+          },
+          {
+            "name": "MyCoinActivity",
+            "des": "充值",
+            "level": 2
+          },
+          {
+            "name": "MyPhotoActivity",
+            "des": "我的相册",
+            "level": 2
+          },
+          {
+            "name": "MyPhotoPubActivity",
+            "des": "我的相册发布",
+            "level": 2
+          },
+          {
+            "name": "MyProfitActivity",
+            "des": "我的收益",
+            "level": 2
+          },
+          {
+            "name": "MyVideoActivity",
+            "des": "我的视频",
+            "level": 2
+          },
+          {
+            "name": "MyWallActivity",
+            "des": "背景墙",
+            "level": 2
+          },
+          {
+            "name": "MyWallChooseImageActivity",
+            "des": "背景墙选择图片",
+            "level": 2
+          },
+          {
+            "name": "MyWallChooseVideoActivity",
+            "des": "背景墙选择视频",
+            "level": 2
+          },
+          {
+            "name": "MyWallDetailActivity",
+            "des": "背景墙详情",
+            "level": 2
+          },
+          {
+            "name": "PhotoDetailActivity",
+            "des": "我的相册详情",
+            "level": 2
+          },
+          {
+            "name": "SearchActivity",
+            "des": "搜索",
+            "level": 2
+          },
+          {
+            "name": "SettingActivity",
+            "des": "设置",
+            "level": 2
+          },
+          {
+            "name": "MyProfitActivity",
+            "des": "我的收益",
+            "level": 2
+          },
+          {
+            "name": "SubcribeAncActivity",
+            "des": "主播预约",
+            "level": 2
+          },
+          {
+            "name": "SubcribeAudActivity",
+            "des": "观众预约",
+            "level": 2
+          },
+          {
+            "name": "UserHomeActivity",
+            "des": "个人主页",
+            "level": 2
+          },
+          {
+            "name": "VipActivity",
+            "des": "会员中心",
+            "level": 2
+          },
+          {
+            "name": "WalletActivity",
+            "des": "我的钱包",
+            "level": 2
+          },
+          {
+            "name": "WalletDetailActivity",
+            "des": "我的明细",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "adapter",
+        "des": "RecyclerView适配器",
+        "level": 1,
+        "child": [
+          {
+            "name": "BlackListAdapter",
+            "des": "黑名单",
+            "level": 2
+          },
+          {
+            "name": "ContactsAdapter",
+            "des": "选择联系人",
+            "level": 2
+          },
+          {
+            "name": "ImMsgAtAdapter",
+            "des": "消息 @我",
+            "level": 2
+          },
+          {
+            "name": "ImMsgCommentAdapter",
+            "des": "消息 评论",
+            "level": 2
+          },
+          {
+            "name": "ImMsgFansAdapter",
+            "des": "消息 粉丝",
+            "level": 2
+          },
+          {
+            "name": "ImMsgOffcialAdapter",
+            "des": "消息 官方消息",
+            "level": 2
+          },
+          {
+            "name": "ImMsgSystemAdapter",
+            "des": "消息 系统消息",
+            "level": 2
+          },
+          {
+            "name": "ImMsgZanAdapter",
+            "des": "消息 点赞",
+            "level": 2
+          },
+          {
+            "name": "LoginTypeAdapter",
+            "des": "登录三方类型",
+            "level": 2
+          },
+          {
+            "name": "MainHomeHotAdapter",
+            "des": "首页 热门",
+            "level": 2
+          },
+          {
+            "name": "MainHomeNearAdapter",
+            "des": "首页 附近",
+            "level": 2
+          },
+          {
+            "name": "MainMessageAdapter",
+            "des": "消息",
+            "level": 2
+          },
+          {
+            "name": "SearchHistoryAdapter",
+            "des": "搜索历史",
+            "level": 2
+          },
+          {
+            "name": "SearchUserAdapter",
+            "des": "搜索用户",
+            "level": 2
+          },
+          {
+            "name": "SettingAdapter",
+            "des": "设置",
+            "level": 2
+          },
+          {
+            "name": "UserLikeAdapter",
+            "des": "个人中心喜欢",
+            "level": 2
+          },
+          {
+            "name": "UserLikeAdapter",
+            "des": "个人中心作品",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "bean",
+        "des": "实体类",
+        "level": 1,
+        "child": [
+          {
+            "name": "BlackListBean",
+            "des": "黑名单",
+            "level": 2
+          },
+          {
+            "name": "ImMsgAtBean",
+            "des": "消息 @我",
+            "level": 2
+          },
+          {
+            "name": "ImMsgCommentBean",
+            "des": "消息 评论",
+            "level": 2
+          },
+          {
+            "name": "ImMsgFansBean",
+            "des": "消息 粉丝",
+            "level": 2
+          },
+          {
+            "name": "ImMsgOffcialBean",
+            "des": "消息 官方消息",
+            "level": 2
+          },
+          {
+            "name": "ImMsgSystemBean",
+            "des": "消息 系统消息",
+            "level": 2
+          },
+          {
+            "name": "ImMsgZanBean",
+            "des": "消息 点赞",
+            "level": 2
+          },
+          {
+            "name": "SearchUserBean",
+            "des": "搜索用户",
+            "level": 2
+          },
+          {
+            "name": "SettingBean",
+            "des": "设置",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "custom",
+        "des": "自定义控件",
+        "level": 1,
+        "child": [
+          {
+            "name": "HomeItemLayout",
+            "des": "首页视频列表 item",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "http",
+        "des": "网络请求",
+        "level": 1,
+        "child": [
+          {
+            "name": "MainHttpConsts",
+            "des": "常量",
+            "level": 2
+          },
+          {
+            "name": "MainHttpUtil",
+            "des": "网络请求工具类",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "des": "工具类",
+        "level": 1,
+        "child": [
+          {
+            "name": "LoginUtil",
+            "des": "登录",
+            "level": 2
+          },
+          {
+            "name": "MainTextRender",
+            "des": "富文本工具类",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "views",
+        "des": "视图组件",
+        "level": 1,
+        "child": [
+          {
+            "name": "AbsMainViewHolder",
+            "des": "首页 抽象类",
+            "level": 2
+          },
+          {
+            "name": "AbsSearchViewHolder",
+            "des": "搜索 抽象类",
+            "level": 2
+          },
+          {
+            "name": "MainFollowViewHolder",
+            "des": "首页 关注列表",
+            "level": 2
+          },
+          {
+            "name": "MainHomeHotViewHolder",
+            "des": "首页 热门列表",
+            "level": 2
+          },
+          {
+            "name": "MainHomeNearViewHolder",
+            "des": "首页 附近列表",
+            "level": 2
+          },
+          {
+            "name": "MainHomeRecommendViewHolder",
+            "des": "首页 推荐列表",
+            "level": 2
+          },
+          {
+            "name": "MainHomeViewHolder",
+            "des": "首页",
+            "level": 2
+          },
+          {
+            "name": "MainMessageViewHolder",
+            "des": "消息",
+            "level": 2
+          },
+          {
+            "name": "MainMeViewHolder",
+            "des": "我的",
+            "level": 2
+          },
+          {
+            "name": "SearchUserViewHolder",
+            "des": "搜索用户",
+            "level": 2
+          },
+          {
+            "name": "SearchVideoViewHolder",
+            "des": "搜索视频",
+            "level": 2
+          },
+          {
+            "name": "UserHomeViewHolder",
+            "des": "个人中心",
+            "level": 2
+          },
+          {
+            "name": "UserLikeViewHolder",
+            "des": "个人中心喜欢",
+            "level": 2
+          },
+          {
+            "name": "UserWorkViewHolder",
+            "des": "个人中心作品",
+            "level": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mob",
+    "des": "Mob 三方登录分享",
+    "level": 0,
+    "child": [
+      {
+        "name": "mob",
+        "des": "mob官方demo代码",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "name": "video",
+    "des": "短视频模块",
+    "level": 0,
+    "child": [
+      {
+        "name": "activity",
+        "des": "activity",
+        "level": 1,
+        "child": [
+          {
+            "name": "AbsVideoCommentActivity",
+            "des": "视频评论基类",
+            "level": 2
+          },
+          {
+            "name": "AbsVideoPlayActivity",
+            "des": "视频播放基类",
+            "level": 2
+          },
+          {
+            "name": "VideoChooseActivity",
+            "des": "视频选择",
+            "level": 2
+          },
+          {
+            "name": "VideoEditActivity",
+            "des": "视频编辑",
+            "level": 2
+          },
+          {
+            "name": "VideoPlayActivity",
+            "des": "视频播放",
+            "level": 2
+          },
+          {
+            "name": "VideoPublishActivity",
+            "des": "视频发布",
+            "level": 2
+          },
+          {
+            "name": "VideoRecordActivity",
+            "des": "视频录制",
+            "level": 2
+          },
+          {
+            "name": "VideoReportActivity",
+            "des": "视频举报",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "adapter",
+        "des": "RecyclerView适配器",
+        "level": 1,
+        "child": [
+          {
+            "name": "MusicAdapter",
+            "des": "音乐",
+            "level": 2
+          },
+          {
+            "name": "MusicClassAdapter",
+            "des": "音乐分类",
+            "level": 2
+          },
+          {
+            "name": "VideoChooseAdapter",
+            "des": "选择视频",
+            "level": 2
+          },
+          {
+            "name": "VideoCommentAdapter",
+            "des": "视频评论",
+            "level": 2
+          },
+          {
+            "name": "VideoPubShareAdapter",
+            "des": "发布视频分享",
+            "level": 2
+          },
+          {
+            "name": "VideoReportAdapter",
+            "des": "视频举报",
+            "level": 2
+          },
+          {
+            "name": "VideoScrollAdapter",
+            "des": "上下滚动视频",
+            "level": 2
+          },
+          {
+            "name": "VideoShareAdapter",
+            "des": "视频分享",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "bean",
+        "des": "实体类",
+        "level": 1,
+        "child": [
+          {
+            "name": "MusicAnimBean",
+            "des": "音乐CD动画",
+            "level": 2
+          },
+          {
+            "name": "MusicBean",
+            "des": "音乐",
+            "level": 2
+          },
+          {
+            "name": "MusicClassBean",
+            "des": "音乐分类",
+            "level": 2
+          },
+          {
+            "name": "VideoBean",
+            "des": "视频实体类",
+            "level": 2
+          },
+          {
+            "name": "VideoChooseBean",
+            "des": "视频选择",
+            "level": 2
+          },
+          {
+            "name": "VideoCommentBean",
+            "des": "视频评论",
+            "level": 2
+          },
+          {
+            "name": "VideoReportBean",
+            "des": "视频举报",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "custom",
+        "des": "自定义控件",
+        "level": 1,
+        "child": [
+          {
+            "name": "AtEditText",
+            "des": "@用户的 EditText",
+            "level": 2
+          },
+          {
+            "name": "AtSpan",
+            "des": "@用户",
+            "level": 2
+          },
+          {
+            "name": "ColorfulProgress",
+            "des": "带有颜色的进度条",
+            "level": 2
+          },
+          {
+            "name": "MusicAnimLayout",
+            "des": "音乐CD动画",
+            "level": 2
+          },
+          {
+            "name": "NumberProgressBar",
+            "des": "带数字的进度条",
+            "level": 2
+          },
+          {
+            "name": "RangeSlider",
+            "des": "滑块",
+            "level": 2
+          },
+          {
+            "name": "RangeSliderViewContainer",
+            "des": "滑块控制器",
+            "level": 2
+          },
+          {
+            "name": "RecordProgressView",
+            "des": "录制进度条",
+            "level": 2
+          },
+          {
+            "name": "SliderViewContainer",
+            "des": "滑块控制器",
+            "level": 2
+          },
+          {
+            "name": "ThumbnailAdapter",
+            "des": "视频缩略图适配器",
+            "level": 2
+          },
+          {
+            "name": "ThumbView",
+            "des": "视频缩略图",
+            "level": 2
+          },
+          {
+            "name": "VideoEditSpecialBtn",
+            "des": "视频特效按钮",
+            "level": 2
+          },
+          {
+            "name": "VideoLikeHeartView",
+            "des": "视频点赞心",
+            "level": 2
+          },
+          {
+            "name": "VideoLoadingBar",
+            "des": "视频加载进度",
+            "level": 2
+          },
+          {
+            "name": "VideoProgressController",
+            "des": "视频处理进度",
+            "level": 2
+          },
+          {
+            "name": "VideoProgressView",
+            "des": "视频处理进度",
+            "level": 2
+          },
+          {
+            "name": "VideoRecordBtnView",
+            "des": "视频录制按钮",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "dialog",
+        "des": "弹窗",
+        "level": 1,
+        "child": [
+          {
+            "name": "VideoInputDialogFragment",
+            "des": "视频评论输入框",
+            "level": 2
+          },
+          {
+            "name": "VideoMusicClassDialog",
+            "des": "视频音乐分类",
+            "level": 2
+          },
+          {
+            "name": "VideoShareDialogFragment",
+            "des": "视频分享",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "event",
+        "des": "EventBus 事件",
+        "level": 1,
+        "child": [
+          {
+            "name": "VideoCommentEvent",
+            "des": "视频评论事件",
+            "level": 2
+          },
+          {
+            "name": "VideoDeleteEvent",
+            "des": "视频删除事件",
+            "level": 2
+          },
+          {
+            "name": "VideoInsertListEvent",
+            "des": "视频添加事件",
+            "level": 2
+          },
+          {
+            "name": "VideoLikeEvent",
+            "des": "视频点赞事件",
+            "level": 2
+          },
+          {
+            "name": "VideoScrollPageEvent",
+            "des": "视频滑动页面事件",
+            "level": 2
+          },
+          {
+            "name": "VideoShareEvent",
+            "des": "视频分享事件",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "http",
+        "des": "网络请求",
+        "level": 1,
+        "child": [
+          {
+            "name": "VideoHttpConsts",
+            "des": "常量",
+            "level": 2
+          },
+          {
+            "name": "VideoHttpUtil",
+            "des": "网络请求工具",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "interfaces",
+        "des": "接口",
+        "level": 1,
+        "child": [
+          {
+            "name": "VideoMusicActionListener",
+            "des": "视频音乐点击事件",
+            "level": 2
+          },
+          {
+            "name": "VideoScrollDataHelper",
+            "des": "视频滑动辅助类",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "upload",
+        "des": "视频上传",
+        "level": 1,
+        "child": [
+          {
+            "name": "VideoUploadBean",
+            "des": "上传实体类",
+            "level": 2
+          },
+          {
+            "name": "VideoUploadCallback",
+            "des": "上传回调",
+            "level": 2
+          },
+          {
+            "name": "VideoUploadFtpImpl",
+            "des": "ftp上传视频",
+            "level": 2
+          },
+          {
+            "name": "VideoUploadQnImpl",
+            "des": "七牛云上传视频",
+            "level": 2
+          },
+          {
+            "name": "VideoUploadTxImpl",
+            "des": "腾讯云上传视频",
+            "level": 2
+          },
+          {
+            "name": "VideoUploadStrategy",
+            "des": "上传视频接口",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "des": "工具类",
+        "level": 1,
+        "child": [
+          {
+            "name": "MusicMediaPlayerUtil",
+            "des": "音乐试听播放",
+            "level": 2
+          },
+          {
+            "name": "VideoIconUtil",
+            "des": "图片工具",
+            "level": 2
+          },
+          {
+            "name": "VideoLocalUtil",
+            "des": "获取本地视频",
+            "level": 2
+          },
+          {
+            "name": "VideoStorge",
+            "des": "视频列表保存",
+            "level": 2
+          },
+          {
+            "name": "VideoTextRender",
+            "des": "富文本工具",
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "views",
+        "des": "视图组件",
+        "level": 1,
+        "child": [
+          {
+            "name": "VideoCommentViewHolder",
+            "des": "视频评论",
+            "level": 2
+          },
+          {
+            "name": "VideoEditCutViewHolder",
+            "des": "视频裁剪",
+            "level": 2
+          },
+          {
+            "name": "VideoEditFilterViewHolder",
+            "des": "视频滤镜",
+            "level": 2
+          },
+          {
+            "name": "VideoEditMusicViewHolder",
+            "des": "视频背景音乐",
+            "level": 2
+          },
+          {
+            "name": "VideoMusicCollectViewHolder",
+            "des": "收藏音乐",
+            "level": 2
+          },
+          {
+            "name": "VideoMusicHotViewHolder",
+            "des": "热门音乐",
+            "level": 2
+          },
+          {
+            "name": "VideoMusicSearchViewHolder",
+            "des": "搜索音乐",
+            "level": 2
+          },
+          {
+            "name": "VideoMusicViewHolder",
+            "des": "视频音乐",
+            "level": 2
+          },
+          {
+            "name": "VideoPlayViewHolder",
+            "des": "视频播放",
+            "level": 2
+          },
+          {
+            "name": "VideoPlayWrapViewHolder",
+            "des": "视频播放",
+            "level": 2
+          },
+          {
+            "name": "VideoProcessViewHolder",
+            "des": "视频预处理",
+            "level": 2
+          },
+          {
+            "name": "VideoScrollViewHolder",
+            "des": "视频上下滑动",
+            "level": 2
+          },
+          {
+            "name": "VideoSpecialViewHolder",
+            "des": "视频特效",
+            "level": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "oneonone",
+    "des": "1v1模块",
+    "level": 0,
+    "child": [
+      {
+        "name": "activity",
+        "des": "activity",
+        "level": 1,
+        "child": [
+          {
+            "name": "ChatAnchorActivity",
+            "des": "主播通话",
+            "level": 2
+          },
+          {
+            "name": "ChatAudienceActivity",
+            "des": "观众通话",
+            "level": 2
+          },
+          {
+            "name": "ChatBaseActivity",
+            "des": "通话基类",
+            "level": 2
+          },
+          {
+            "name": "LiveAddImpressActivity",
+            "des": "添加印象",
+            "level": 2
+          },
+          {
+            "name": "MatchAnchorActivity",
+            "des": "主播匹配",
+            "level": 2
+          },
+          {
+            "name": "MatchAudienceActivity",
+            "des": "观众匹配",
+            "level": 2
+          },
+        ]
+      }
+    ]
+  }
+]

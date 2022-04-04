@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/avatar"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxWidth="130dp"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        />
+
+
+    <ImageView
+        android:id="@+id/level"
+        android:layout_width="30dp"
+        android:layout_height="14dp"
+        android:layout_alignTop="@id/name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/name"
+        />
+
+
+    <ImageView
+        android:id="@+id/vip"
+        android:layout_width="24dp"
+        android:layout_height="14dp"
+        android:layout_alignTop="@id/name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/level"
+        android:src="@mipmap/o_vip_icon"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/avatar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coin_balance_2"
+            android:textColor="@color/gray1"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="13sp"
+            />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_coin"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn_subcribe_to"
+        android:layout_width="50dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_follow_1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/chat_subcribe_to"
+        android:textColor="@color/global"
+        android:textSize="12sp"
+        />
+
+
+    <View
+        style="@style/line2"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

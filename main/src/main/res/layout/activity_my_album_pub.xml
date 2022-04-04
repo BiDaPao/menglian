@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:paddingTop="19dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:onClick="authClick"
+                android:padding="5dp"
+                android:text="@string/cancel"
+                android:textColor="@color/global"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:onClick="authClick"
+                android:padding="5dp"
+                android:text="@string/upload"
+                android:textColor="@color/global"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/white"
+        >
+
+        <com.aihuan.main.custom.UploadImageView2
+            android:id="@+id/img_upload"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:uiv_add_icon="@mipmap/icon_auth_add"
+            app:uiv_add_size="20dp"
+            app:uiv_bg_color="@color/background"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pri_setting"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="54dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_check_box"
+            android:button="@null"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B4B4B4"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray1"
+        android:textSize="10sp"
+        />
+
+
+</LinearLayout>

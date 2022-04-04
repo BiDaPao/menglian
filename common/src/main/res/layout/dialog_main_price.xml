@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="200dp"
+    android:background="@drawable/bg_dialog_2"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/btn_price_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="6dp"
+            android:src="@mipmap/icon_price_tip"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_price_tip_2"
+            android:textColor="@color/gray1"
+            android:textSize="12sp"
+            />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="7dp"
+        android:src="@mipmap/icon_price_close"
+        android:tint="@color/gray3"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:text="@string/main_price_tip_1"
+        android:textColor="@color/textColor2"
+        android:textSize="14sp"
+        android:translationY="-10dp"
+        />
+
+    <TextView
+        android:id="@+id/coin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/textColor2"
+        android:textSize="14sp"
+        android:translationY="-10dp"
+        />
+
+    <cn.qqtheme.framework.widget.WheelView
+        android:id="@+id/wheelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        />
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/global"
+        android:textSize="15sp"
+        />
+
+    <View
+        style="@style/line2"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:background="#DCDCDC"
+        />
+</FrameLayout>

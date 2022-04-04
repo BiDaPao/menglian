@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.aihuan.one">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".activity.ChatAnchorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            />
+        <activity
+            android:name=".activity.ChatAudienceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            />
+        <activity
+            android:name=".activity.LiveAddImpressActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".activity.MatchAudienceActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".activity.MatchAnchorActivity"
+            android:screenOrientation="portrait"
+            />
+    </application>
+
+</manifest>

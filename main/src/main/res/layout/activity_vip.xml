@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/view_title"/>
+
+    <com.aihuan.common.custom.MyFrameLayout2
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@mipmap/o_vip_bg"
+        app:mfl_ratio="0.426667"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/tip_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/tip_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/btn_charge"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_btn_vip_charge"
+                android:gravity="center"
+                android:textColor="@color/global"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+    </com.aihuan.common.custom.MyFrameLayout2>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/o_vip_icon_zs"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="@string/vip_tip_3"
+            android:textColor="@color/gray1"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        />
+</LinearLayout>

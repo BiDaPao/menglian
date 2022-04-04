@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aihuan.main">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.AuthBasicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginInvalidActivity"
+            android:theme="@style/dialog2" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserHomeNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FollowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ImpressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ImpressCalcActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyProfitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AuthActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+            <intent-filter>
+                <data
+                    android:host="com.menglian.live"
+                    android:scheme="menglian" />
+                <!-- 下面这几行也必须得设置 -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WalletDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GiftCabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SubcribeAudActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SubcribeAncActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyPhotoPubActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PhotoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyWallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyWallDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyWallChooseImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyWallChooseVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BlackListActivity"
+            android:screenOrientation="portrait" /> <!-- 7.22 -->
+        <activity
+            android:name=".activity.AtFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MatchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RankListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyDynamicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewUserInfoEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BeautySettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullAppTheme" />
+        <activity
+            android:name=".activity.VoiceSettingActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

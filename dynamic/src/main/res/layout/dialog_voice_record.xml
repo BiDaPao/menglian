@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/record"/>
+
+        <ImageView
+            android:id="@+id/btn_cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="12dp"
+            android:src="@mipmap/voice_cancel"/>
+
+        <ImageView
+            android:id="@+id/btn_confirm"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:src="@mipmap/voice_confirm"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray4"/>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/ll_play"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_btn_voice_pause"
+        android:gravity="center">
+
+        <com.aihuan.common.custom.DrawableTextView
+            android:id="@+id/btn_play"
+            android:gravity="center"
+            android:drawablePadding="6dp"
+            app:dt_left_drawable="@mipmap/voice_play"
+            app:dt_left_width="12dp"
+            app:dt_left_height="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/voice_audition"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0s"
+            android:textColor="@color/textColor2"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="60s"
+            android:textColor="@color/gray1"
+            android:textSize="10sp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+        <ProgressBar
+            android:id="@+id/progress"
+            android:progress="0"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progressDrawable="@drawable/voice_seekbar"/>
+        <View
+            android:background="@mipmap/progress_white"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:id="@+id/btn_record"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_voice_frame_list"/>
+
+        <TextView
+            android:id="@+id/record_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_record"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/click_record"
+            android:textColor="@color/gray1"
+            android:textSize="11sp"
+            />
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:id="@+id/btn_del"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn_record"
+            android:padding="10sp"
+            android:src="@mipmap/voice_del"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

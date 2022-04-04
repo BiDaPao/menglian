@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+ <androidx.core.widget.NestedScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <include layout="@layout/view_title" />
+
+         <View style="@style/line2" />
+
+         <FrameLayout
+             android:id="@+id/btn_black_list"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:onClick="settingClick"
+             android:paddingLeft="15dp"
+             android:paddingRight="15dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/setting_black_list"
+                 android:textColor="@color/textColor"
+                 android:textSize="16sp" />
+
+             <ImageView
+                 android:layout_width="16dp"
+                 android:layout_height="18dp"
+                 android:layout_gravity="center_vertical|right"
+                 android:src="@mipmap/icon_arrow_right" />
+
+         </FrameLayout>
+
+         <View style="@style/line2" />
+
+
+         <LinearLayout
+             android:id="@+id/audio_receive_container"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="60dp"
+                 android:background="@color/white"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="15dp"
+                 android:paddingRight="15dp">
+
+                 <!--        <ImageView-->
+                 <!--            android:layout_width="22dp"-->
+                 <!--            android:layout_height="22dp"-->
+                 <!--            android:src="@mipmap/setting_live" />-->
+
+                 <TextView
+                     android:layout_width="80dp"
+                     android:layout_height="wrap_content"
+                     android:text="@string/video_answer"
+                     android:textColor="@color/textColor"
+                     android:textSize="16sp" />
+
+                 <ImageView
+                     android:id="@+id/btn_video_radio"
+                     android:layout_width="70dp"
+                     android:layout_height="54dp"
+                     android:layout_marginLeft="30dp"
+                     android:onClick="settingClick"
+                     android:padding="15dp"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/selector_switch_btn" />
+
+                 <TextView
+                     android:id="@+id/tv_video_price"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="8dp"
+                     android:layout_weight="1"
+                     android:gravity="end|center_vertical"
+                     android:onClick="settingClick"
+                     android:textColor="#B4B4B4"
+                     android:textSize="15sp" />
+
+                 <ImageView
+                     android:layout_width="16dp"
+                     android:layout_height="18dp"
+                     android:src="@mipmap/icon_arrow_right"
+                     android:tint="#BEBEBE" />
+
+             </LinearLayout>
+
+             <View style="@style/line2" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="60dp"
+                 android:background="@color/white"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="15dp"
+                 android:paddingRight="15dp">
+
+                 <!--        <ImageView-->
+                 <!--            android:layout_width="22dp"-->
+                 <!--            android:layout_height="22dp"-->
+                 <!--            android:src="@mipmap/setting_voice" />-->
+
+                 <TextView
+                     android:layout_width="80dp"
+                     android:layout_height="wrap_content"
+                     android:text="@string/voice_answer"
+                     android:textColor="@color/textColor"
+                     android:textSize="16sp" />
+
+                 <ImageView
+                     android:id="@+id/btn_voice_radio"
+                     android:layout_width="70dp"
+                     android:layout_height="54dp"
+                     android:layout_marginLeft="30dp"
+                     android:onClick="settingClick"
+                     android:padding="15dp"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/selector_switch_btn" />
+
+                 <TextView
+                     android:id="@+id/tv_voice_price"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_marginRight="8dp"
+                     android:layout_weight="1"
+                     android:gravity="end|center_vertical"
+                     android:onClick="settingClick"
+                     android:textColor="#B4B4B4"
+                     android:textSize="15sp" />
+
+                 <ImageView
+                     android:id="@+id/arrow"
+                     android:layout_width="16dp"
+                     android:layout_height="18dp"
+                     android:src="@mipmap/icon_arrow_right"
+                     android:tint="#BEBEBE" />
+
+             </LinearLayout>
+
+             <View style="@style/line2" />
+
+
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:background="@color/white"
+             android:gravity="center_vertical"
+             android:paddingLeft="15dp">
+
+             <!--        <ImageView-->
+             <!--            android:layout_width="22dp"-->
+             <!--            android:layout_height="22dp"-->
+             <!--            android:src="@mipmap/setting_disturb" />-->
+
+             <TextView
+                 android:layout_width="80dp"
+                 android:layout_height="wrap_content"
+                 android:text="@string/disturb"
+                 android:textColor="@color/textColor"
+                 android:textSize="16sp" />
+
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="8dp"
+                 android:layout_weight="1"
+                 android:gravity="end"
+                 android:textColor="#B4B4B4"
+                 android:textSize="15sp" />
+
+             <ImageView
+                 android:id="@+id/btn_disturb_radio"
+                 android:layout_width="70dp"
+                 android:layout_height="54dp"
+                 android:onClick="settingClick"
+                 android:padding="15dp"
+                 android:scaleType="fitXY"
+                 android:src="@drawable/selector_switch_btn" />
+
+
+         </LinearLayout>
+
+         <View style="@style/line2" />
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:paddingLeft="15dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/setting_chat_music"
+                 android:textColor="@color/textColor"
+                 android:textSize="16sp" />
+
+             <ImageView
+                 android:id="@+id/btn_radio_chat_music"
+                 android:layout_width="70dp"
+                 android:layout_height="54dp"
+                 android:layout_centerVertical="true"
+                 android:layout_gravity="center_vertical|right"
+                 android:onClick="settingClick"
+                 android:padding="15dp"
+                 android:scaleType="fitXY" />
+
+         </FrameLayout>
+
+         <View style="@style/line2" />
+
+         <LinearLayout
+             android:id="@+id/group_beauty"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:background="@color/white"
+             android:gravity="center_vertical"
+             android:onClick="settingClick"
+             android:paddingLeft="15dp"
+             android:paddingRight="15dp">
+
+             <!--        <ImageView-->
+             <!--            android:layout_width="22dp"-->
+             <!--            android:layout_height="22dp"-->
+             <!--            android:src="@mipmap/setting_beauty" />-->
+
+             <TextView
+                 android:layout_width="80dp"
+                 android:layout_height="wrap_content"
+                 android:text="@string/beauty_setting"
+                 android:textColor="@color/textColor"
+                 android:textSize="16sp" />
+
+             <View
+                 android:layout_width="0dp"
+                 android:layout_height="1dp"
+                 android:layout_weight="1" />
+
+             <ImageView
+                 android:layout_width="16dp"
+                 android:layout_height="18dp"
+                 android:src="@mipmap/icon_arrow_right"
+                 android:tint="#BEBEBE" />
+
+         </LinearLayout>
+
+         <View style="@style/line2" />
+
+         <FrameLayout
+             android:id="@+id/btn_about_us"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:onClick="settingClick"
+             android:paddingLeft="15dp"
+             android:paddingRight="15dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/setting_about_us"
+                 android:textColor="@color/textColor"
+                 android:textSize="16sp" />
+
+             <ImageView
+                 android:layout_width="16dp"
+                 android:layout_height="18dp"
+                 android:layout_gravity="center_vertical|right"
+                 android:src="@mipmap/icon_arrow_right" />
+
+         </FrameLayout>
+
+         <View style="@style/line2" />
+
+         <FrameLayout
+             android:id="@+id/btn_check_update"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:onClick="settingClick"
+             android:paddingLeft="15dp"
+             android:paddingRight="15dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/setting_check_update"
+                 android:textColor="@color/textColor"
+                 android:textSize="16sp" />
+
+             <TextView
+                 android:id="@+id/version"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical|right"
+                 android:textColor="@color/textColor"
+                 android:textSize="16sp" />
+
+         </FrameLayout>
+
+
+         <View style="@style/line2" />
+
+         <FrameLayout
+             android:id="@+id/btn_clear_cache"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:onClick="settingClick"
+             android:paddingLeft="15dp"
+             android:paddingRight="15dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:text="@string/setting_clear_cache_2"
+                 android:textColor="@color/textColor"
+                 android:textSize="16sp" />
+
+             <TextView
+                 android:id="@+id/cache_size"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical|right"
+                 android:textColor="@color/textColor"
+                 android:textSize="16sp" />
+
+         </FrameLayout>
+
+
+         <View style="@style/line2" />
+
+
+         <TextView
+             android:id="@+id/btn_logout"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:layout_marginTop="60dp"
+             android:background="@color/background"
+             android:gravity="center"
+             android:onClick="settingClick"
+             android:text="@string/setting_exit"
+             android:textColor="@color/textColor"
+             android:textSize="16sp" />
+
+
+     </LinearLayout>
+
+
+ </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

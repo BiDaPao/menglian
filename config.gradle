@@ -1,0 +1,30 @@
+ext {
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "27.0.3",
+            minSdkVersion    : 21,
+            targetSdkVersion : 27,
+            versionCode      : 2,
+            versionName      : "1.0.0"
+    ]
+
+    manifestPlaceholders = [
+            serverHost    : "https://a.lcmdhr.top",
+//            serverHost       : "https://a.lcmdhr.top",
+            //serverHost       : "http://live1v1test2.yunbaozhibo.com",
+
+            //腾讯地图          update----10.23
+            txMapAppKey   : "V4SBZ-AJV6R-2EZWS-W3SRE-WHVSK-JXFQF",
+            txMapAppSecret: "u8EY4DlnMjFs9MqMcjdDbMKZcW71K3V",
+
+            //腾讯bugly       update----10.23
+            buglyAppId    : "240f2d006d",//20c11021f2
+
+            //友盟统计
+            umengAppKey   : "608669159e4e8b6f618428ba",
+
+            //美颜key
+            sproutKey     : "0a46f842d7a84c8c9489080ed788d948"
+    ]
+
+}
