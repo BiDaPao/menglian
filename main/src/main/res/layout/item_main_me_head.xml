@@ -88,7 +88,7 @@
                 android:layout_height="18dp"
                 android:layout_marginLeft="15dp"
                 android:src="@mipmap/icon_arrow_right"
-                android:tint="#BEBEBE"
+
                 />
 
         </LinearLayout>
@@ -98,7 +98,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:gravity="center_vertical"
         >
@@ -132,7 +132,7 @@
             android:id="@+id/btn_fans"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="20dp"
             android:orientation="vertical"
             android:visibility="gone"
             >
@@ -159,7 +159,7 @@
             android:id="@+id/btn_coin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="20dp"
             android:orientation="vertical"
             >
 
@@ -181,7 +181,36 @@
                 />
         </LinearLayout>
 
-        <Space
+        <LinearLayout
+            android:id="@+id/sweet_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/sweet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor2"
+                android:textSize="15sp"
+                android:text="0"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/sweet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="甜蜜数"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+
+        <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1"

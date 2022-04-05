@@ -390,6 +390,17 @@ public class ImRoomAdapter extends RecyclerView.Adapter {
         }
 
         void setData(ImMessageBean bean, int position, Object payload) {
+
+            if (!bean.isFromSelf()){
+                mAvatar.setOnClickListener(v -> {
+                    ToastUtil.show("sss");
+                });
+            }else{
+                mAvatar.setOnClickListener(v -> {});
+            }
+
+
+
             mImMessageBean = bean;
             if (payload == null) {
                 if (bean.isFromSelf()) {

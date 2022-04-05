@@ -26,12 +26,11 @@
         android:layout_below="@id/time"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="5dp"
-        android:scaleType="centerCrop"
-        app:riv_oval="true"
         android:clickable="false"
-        android:focusableInTouchMode="false"
         android:focusable="false"
-        />
+        android:focusableInTouchMode="false"
+        android:scaleType="centerCrop"
+        app:riv_oval="true" />
 
     <com.aihuan.im.custom.BubbleLayout
         android:layout_width="wrap_content"

@@ -211,7 +211,6 @@ public class AuthActivity extends AbsActivity implements ChooseImpressDialogFrag
         });
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.HORIZONTAL, false));
         mAdapter = new AuthImageAdapter(mContext);
         mRecyclerView.setAdapter(mAdapter);
 

@@ -7,8 +7,10 @@ import android.text.Editable;
 import android.text.TextUtils;
 import android.view.View;
 
+import com.aihuan.common.CommonAppConfig;
 import com.aihuan.common.Constants;
 import com.aihuan.common.activity.AbsActivity;
+import com.aihuan.common.bean.UserBean;
 import com.aihuan.common.utils.ToastUtil;
 import com.aihuan.main.R;
 import com.aihuan.main.custom.XEditText;
@@ -34,7 +36,16 @@ public class AuthBasicActivity extends AbsActivity {
         findViewById(R.id.btn_submit).setOnClickListener(v -> {
             ToastUtil.show(realName+":"+cardNumber);
             if (this.verifyInfo()){
-                AuthActivity.forward(this,);
+                UserBean u = CommonAppConfig.getInstance().getUserBean();
+                int auth = u.getAuth();
+                if (auth == Constants.AUTH_WAITING) {
+                    ToastUtil.show(R.string.auth_tip_34);
+                    return;
+                }
+                if (auth == Constants.AUTH_FAILED) {
+                    ToastUtil.show(R.string.auth_tip_35);
+                }
+                AuthActivity.forward(mContext, auth);
             }
         });
 

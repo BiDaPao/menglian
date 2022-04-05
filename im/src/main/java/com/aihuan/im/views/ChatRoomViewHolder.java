@@ -256,8 +256,15 @@ public class ChatRoomViewHolder extends AbsViewHolder implements
         }
         ImageView ivLeft = (ImageView) findViewById(R.id.left_avatar);
         ImageView ivRight = (ImageView) findViewById(R.id.right_avatar);
+
+
+
+
         if (mUserBean != null) {
             ImgLoader.displayAvatar(mContext, mUserBean.getAvatar(), ivLeft);
+            ivLeft.setOnClickListener(v -> {
+                RouteUtil.forwardUserHome(mToUid);
+            });
         }
         UserBean userBean = CommonAppConfig.getInstance().getUserBean();
         if (userBean != null) {
