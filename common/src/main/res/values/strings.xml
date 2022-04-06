@@ -529,6 +529,7 @@
     <string name="charge">充值</string>
 
     <string name="auth_my_auth">我要认证</string>
+    <string name="edit_info">编辑资料</string>
     <string name="auth_tip_1">*请上传一张本人真实照片，将作为列表封面展示</string>
     <string name="auth_submit">提交</string>
     <string name="auth_tip_2">*请务必上传至少一张本人真实照片，将作为个人主页背景墙展示</string>

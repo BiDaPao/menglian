@@ -20,6 +20,7 @@ public class OneHttpConsts {
     public static final String SET_AUTH = "setAuth";
     public static final String SET_ALIPAY_AUTH = "SetAlipayAuth";
     public static final String GET_ALIPAY_AUTH_RESULT = "GetAlipayUserCertifyQuery";
+    public  static  final  String setUserAuth ="User.setUserAuth";
     public static final String GET_AUTH = "getAuth";
     public static final String CHAT_ANC_TO_AUD_START = "chatAncToAudStart";
     public static final String CHAT_ANC_TO_AUD_START_2 = "chatAncToAudStart2";

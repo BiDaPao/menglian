@@ -15,6 +15,8 @@ import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.aihuan.common.utils.RouteUtil;
+import com.aihuan.im.activity.ChatRoomActivity;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.aihuan.common.CommonAppConfig;
@@ -378,6 +380,11 @@ public class ImRoomAdapter extends RecyclerView.Adapter {
         return mList.get(mList.size() - 1);
     }
 
+    private boolean mToAuth =false ;
+    public void setAuthed(boolean mToAuth) {
+      this.mToAuth =mToAuth;
+    }
+
     class Vh extends RecyclerView.ViewHolder {
         ImageView mAvatar;
         TextView mTime;
@@ -393,12 +400,17 @@ public class ImRoomAdapter extends RecyclerView.Adapter {
 
             if (!bean.isFromSelf()){
                 mAvatar.setOnClickListener(v -> {
-                    ToastUtil.show("sss");
+                if (!mToAuth) {
+                        ToastUtil.show(R.string.user_is_not_auth);
+                    } else {
+                        RouteUtil.forwardUserHome(mToUid);
+                    }
                 });
             }else{
-                mAvatar.setOnClickListener(v -> {});
+                mAvatar.setOnClickListener(v -> {
+                   
+                });
             }
-
 
 
             mImMessageBean = bean;

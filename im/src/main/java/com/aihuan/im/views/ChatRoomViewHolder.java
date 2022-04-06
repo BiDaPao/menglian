@@ -258,17 +258,21 @@ public class ChatRoomViewHolder extends AbsViewHolder implements
         ImageView ivRight = (ImageView) findViewById(R.id.right_avatar);
 
 
-
-
         if (mUserBean != null) {
             ImgLoader.displayAvatar(mContext, mUserBean.getAvatar(), ivLeft);
+            //跳转主页；
             ivLeft.setOnClickListener(v -> {
-                RouteUtil.forwardUserHome(mToUid);
+                if (!mToAuth) {
+                    ToastUtil.show(R.string.user_is_not_auth);
+                } else {
+                    RouteUtil.forwardUserHome(mUserBean.getId());
+                }
             });
         }
         UserBean userBean = CommonAppConfig.getInstance().getUserBean();
         if (userBean != null) {
             ImgLoader.displayAvatar(mContext, userBean.getAvatar(), ivRight);
+
         }
         setAccost();
     }
@@ -355,6 +359,7 @@ public class ChatRoomViewHolder extends AbsViewHolder implements
         getRemark();
         getIntimacyLevel();
         mAdapter = new ImRoomAdapter(mContext, mToUid, mUserBean);
+        mAdapter.setAuthed(mToAuth);
         mAdapter.setActionListener(this);
         mRecyclerView.setAdapter(mAdapter);
         ImMessageUtil.getInstance().getChatMessageList(mToUid, new CommonCallback<List<ImMessageBean>>() {

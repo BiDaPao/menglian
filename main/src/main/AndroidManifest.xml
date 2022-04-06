@@ -6,8 +6,21 @@
         android:allowBackup="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.AuthBasicActivity"
-            android:exported="false" />
+            android:name=".activity.AuthActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+            <intent-filter>
+                <data
+                    android:host="com.menglian.live"
+                    android:scheme="menglian" />
+                <!-- 下面这几行也必须得设置 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".activity.LoginInvalidActivity"
             android:theme="@style/dialog2" />
@@ -60,21 +73,11 @@
             android:name=".activity.CashActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.AuthActivity"
+            android:name=".activity.AuthInfoActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
-            <intent-filter>
-                <data
-                    android:host="com.menglian.live"
-                    android:scheme="menglian" />
-                <!-- 下面这几行也必须得设置 -->
-                <category android:name="android.intent.category.DEFAULT" />
 
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity.WalletActivity"

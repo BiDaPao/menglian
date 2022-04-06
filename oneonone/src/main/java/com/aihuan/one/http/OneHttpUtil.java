@@ -229,6 +229,19 @@ public class OneHttpUtil {
                 .execute(callback);
     }
 
+    /**
+     * 进行资料的认证（身份证和真实的姓名）
+     */
+    public  static  void setUserAuth(String userName ,String cardNumber ,HttpCallback callback){
+        HttpClient.getInstance().get("User.setUserAuth",OneHttpConsts.setUserAuth)
+                .params("uid",CommonAppConfig.getInstance().getUid())
+                .params("token",CommonAppConfig.getInstance().getToken())
+                .params("is_alipay_auth","1")
+                .execute(callback);
+    }
+
+
+
 
     /**
      * 主播向观众赴约，检测观众状态，同时获取自己的推拉流地址

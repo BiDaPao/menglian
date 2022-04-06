@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -31,7 +30,6 @@ import com.aihuan.common.utils.StringUtil;
 import com.aihuan.common.utils.ToastUtil;
 import com.aihuan.main.R;
 import com.aihuan.main.activity.AuthActivity;
-import com.aihuan.main.activity.AuthBasicActivity;
 import com.aihuan.main.activity.EditProfileActivity;
 import com.aihuan.main.activity.FansActivity;
 import com.aihuan.main.activity.FollowActivity;
@@ -49,7 +47,6 @@ import com.aihuan.main.http.MainHttpUtil;
 import com.aihuan.main.presenter.UserStatusP;
 
 import java.util.List;
-import java.util.logging.Logger;
 
 /**
  * Created by cxf on 2018/9/22.
@@ -69,6 +66,7 @@ public class MainMeViewHolder extends AbsMainViewHolder implements View.OnClickL
     private TextView mFans;
     private TextView mCoin;
     private TextView mCoinName;
+    private TextView mSweet ;
     private View mBtnFans;
     private boolean mPaused;
 
@@ -91,6 +89,11 @@ public class MainMeViewHolder extends AbsMainViewHolder implements View.OnClickL
         mAdapter.setActionListener(this);
         mRecyclerView.setAdapter(mAdapter);
         View headView = mAdapter.getHeadView();
+
+        headView.findViewById(R.id.sweet_data).setOnClickListener(v -> {
+            forwardWallet();
+        });
+
         mAvatar = headView.findViewById(R.id.avatar);
         mName = headView.findViewById(R.id.name);
         mLevel = headView.findViewById(R.id.level);
@@ -100,6 +103,9 @@ public class MainMeViewHolder extends AbsMainViewHolder implements View.OnClickL
         mFans = headView.findViewById(R.id.fans);
         mCoin = headView.findViewById(R.id.coin);
         mCoinName = headView.findViewById(R.id.coin_name);
+        mSweet =headView.findViewById(R.id.sweet);
+
+
         headView.findViewById(R.id.btn_edit).setOnClickListener(this);
         headView.findViewById(R.id.btn_follow).setOnClickListener(this);
         headView.findViewById(R.id.btn_coin).setOnClickListener(this);
@@ -159,6 +165,7 @@ public class MainMeViewHolder extends AbsMainViewHolder implements View.OnClickL
         mID.setText(StringUtil.contact("ID:", u.getId()));
         mFollow.setText(StringUtil.toWan(u.getFollows()));
         mCoin.setText(u.getCoin());
+        mSweet.setText(u.getVotes());
         mCoinName.setText(CommonAppConfig.getInstance().getCoinName());
         if (u.isVip()) {
             if (mVip.getVisibility() != View.VISIBLE) {
@@ -321,7 +328,7 @@ public class MainMeViewHolder extends AbsMainViewHolder implements View.OnClickL
         if (auth == Constants.AUTH_FAILED) {
             ToastUtil.show(R.string.auth_tip_35);
         }
-        AuthBasicActivity.forward(mContext, auth);
+        AuthActivity.forward(mContext, auth);
     }
 
 

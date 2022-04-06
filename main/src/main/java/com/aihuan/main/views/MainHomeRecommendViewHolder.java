@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.aihuan.common.CommonAppConfig;
 import com.aihuan.common.bean.UserBean;
+import com.aihuan.common.utils.ToastUtil;
 import com.aihuan.im.activity.ChatRoomActivity;
 import com.aihuan.main.interfaces.OnAccostClick;
 import com.alibaba.fastjson.JSON;

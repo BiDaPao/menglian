@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import com.aihuan.common.Constants;
 import com.aihuan.common.upload.UploadBean;
 import com.aihuan.main.R;
-import com.aihuan.main.activity.AuthActivity;
+import com.aihuan.main.activity.AuthInfoActivity;
 import com.aihuan.main.custom.UploadImageView;
 
 import java.io.File;
@@ -46,7 +46,7 @@ public class AuthImageAdapter extends RecyclerView.Adapter<AuthImageAdapter.Vh> 
                 }
                 int position = (int) tag;
                 if (position >= 0 && position < mList.size()) {
-                    ((AuthActivity) mContext).chooseImage(position);
+                    ((AuthInfoActivity) mContext).chooseImage(position);
                 }
             }
 

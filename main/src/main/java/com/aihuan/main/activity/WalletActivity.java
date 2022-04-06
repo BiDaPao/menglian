@@ -28,6 +28,7 @@ public class WalletActivity extends AbsActivity {
     private TextView mCoin;
     private boolean mPaused;
     private boolean mCoinChanged;
+    private TextView sweet ;
 
     @Override
     protected int getLayoutId() {
@@ -39,6 +40,7 @@ public class WalletActivity extends AbsActivity {
         setTitle(WordUtil.getString(R.string.wallet));
         mCoinName = findViewById(R.id.coin_name);
         mCoin = findViewById(R.id.coin);
+        sweet =findViewById(R.id.sweet);
         mCoinName.setText(String.format(WordUtil.getString(R.string.wallet_coin_name), CommonAppConfig.getInstance().getCoinName()));
         EventBus.getDefault().register(this);
         getLastCoin();
@@ -69,6 +71,7 @@ public class WalletActivity extends AbsActivity {
             public void callback(UserBean u) {
                 if (mCoin != null) {
                     mCoin.setText(u.getCoin());
+                    sweet.setText(u.getVotes());
                 }
             }
         });

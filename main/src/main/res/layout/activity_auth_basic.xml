@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="#f8f8f8"
-    tools:context=".activity.AuthBasicActivity">
+    tools:context=".activity.AuthActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
