@@ -69,7 +69,7 @@ public class AppContext extends CommonAppContext {
                 L.e("萌颜初始化------->");
             }
         } else {
-            CommonAppConfig.getInstance().setTiBeautyEnable(false);
+              CommonAppConfig.getInstance().setTiBeautyEnable(false);
         }
 
     }

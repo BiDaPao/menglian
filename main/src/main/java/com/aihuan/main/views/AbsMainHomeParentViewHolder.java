@@ -149,10 +149,12 @@ public abstract class AbsMainHomeParentViewHolder extends AbsMainViewHolder {
         }
     }
 
+
+
     @Override
     public void onResume() {
         super.onResume();
-        if (isShowed() && mPaused) {
+        if (isShowed() && mPaused ) {
             loadData();
         }
         mPaused = false;

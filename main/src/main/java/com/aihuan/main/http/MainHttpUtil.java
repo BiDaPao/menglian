@@ -1,5 +1,8 @@
 package com.aihuan.main.http;
 
+import android.util.Log;
+
+import com.aihuan.common.http.JsonBean;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.aihuan.common.CommonAppConfig;
@@ -10,6 +13,9 @@ import com.aihuan.common.interfaces.CommonCallback;
 import com.aihuan.common.utils.MD5Util;
 import com.aihuan.common.utils.SpUtil;
 import com.aihuan.common.utils.StringUtil;
+import com.lzy.okgo.request.GetRequest;
+
+import java.util.logging.Logger;
 
 /**
  * Created by cxf on 2018/9/17.
@@ -95,10 +101,16 @@ public class MainHttpUtil {
      * 首页直播
      */
     public static void getHot(int p, byte sex, byte chatType, HttpCallback callback) {
-        HttpClient.getInstance().get("Home.getHot", MainHttpConsts.GET_HOT)
+        GetRequest<JsonBean> params = HttpClient.getInstance().get("Home.getHot", MainHttpConsts.GET_HOT)
                 .params("uid", CommonAppConfig.getInstance().getUid())
                 .params("token", CommonAppConfig.getInstance().getToken())
-                .params("sex", sex)
+                .params("sex", sex);
+        if (p==1){
+                    params  .params("action_type",1);
+                }else{
+                    params  .params("action_type",0);
+                }
+                params
                 .params("type", chatType)
                 .params("p", p)
                 .execute(callback);

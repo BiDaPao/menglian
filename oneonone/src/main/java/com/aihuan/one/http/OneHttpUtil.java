@@ -237,6 +237,8 @@ public class OneHttpUtil {
                 .params("uid",CommonAppConfig.getInstance().getUid())
                 .params("token",CommonAppConfig.getInstance().getToken())
                 .params("is_alipay_auth","1")
+                .params("id_card",cardNumber)
+                .params("name",userName)
                 .execute(callback);
     }
 

@@ -1,27 +1,23 @@
 package com.aihuan.main.views;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
-
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.aihuan.common.CommonAppConfig;
-import com.aihuan.common.bean.UserBean;
-import com.aihuan.common.utils.ToastUtil;
-import com.aihuan.im.activity.ChatRoomActivity;
-import com.aihuan.main.interfaces.OnAccostClick;
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.aihuan.common.Constants;
 import com.aihuan.common.activity.AbsActivity;
 import com.aihuan.common.adapter.RefreshAdapter;
+import com.aihuan.common.bean.ChargeSuccessBean;
+import com.aihuan.common.bean.UserBean;
 import com.aihuan.common.custom.CommonRefreshView;
 import com.aihuan.common.custom.ItemDecoration;
 import com.aihuan.common.custom.UPMarqueeView;
@@ -32,13 +28,15 @@ import com.aihuan.main.R;
 import com.aihuan.main.activity.RankListActivity;
 import com.aihuan.main.adapter.MainHomeRecommendAdapter;
 import com.aihuan.main.adapter.MainRankAdapter;
-import com.aihuan.common.bean.ChargeSuccessBean;
 import com.aihuan.main.bean.ListBean;
 import com.aihuan.main.dialog.MainFilterDialogFragment;
 import com.aihuan.main.http.MainHttpConsts;
 import com.aihuan.main.http.MainHttpUtil;
+import com.aihuan.main.interfaces.OnAccostClick;
 import com.aihuan.main.presenter.ChargeAnimPresenter;
 import com.aihuan.one.bean.ChatLiveBean;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -154,12 +152,10 @@ public class MainHomeRecommendViewHolder extends AbsMainHomeChildViewHolder impl
             public RefreshAdapter<ChatLiveBean> getAdapter() {
                 return null;
             }
-
             @Override
             public void loadData(int p, HttpCallback callback) {
-                MainHttpUtil.getHot(p, mSex, mChatType, callback);
+                MainHttpUtil.getHot(p, mSex, mChatType,callback);
             }
-
             @Override
             public List<ChatLiveBean> processData(String[] info) {
                 JSONObject obj = JSON.parseObject(info[0]);
@@ -205,6 +201,7 @@ public class MainHomeRecommendViewHolder extends AbsMainHomeChildViewHolder impl
 //        mBanner.start();
 //    }
 
+    @SuppressLint("ClickableViewAccessibility")
     private void showRankList() {
         if (mMainRankAdapterList == null) {
             return;
@@ -237,14 +234,11 @@ public class MainHomeRecommendViewHolder extends AbsMainHomeChildViewHolder impl
             mRankNoData[i] = rankView.findViewById(R.id.no_data);
             RecyclerView recyclerView = rankView.findViewById(R.id.recyclerView);
             recyclerView.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.HORIZONTAL, false));
-            recyclerView.setOnTouchListener(new View.OnTouchListener() {
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    if (event.getAction() == MotionEvent.ACTION_UP) {
-                        rankView.performClick();  //模拟父控件的点击
-                    }
-                    return false;
+            recyclerView.setOnTouchListener((v, event) -> {
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    rankView.performClick();  //模拟父控件的点击
                 }
+                return false;
             });
             if (i == 0) {
                 MainRankAdapter consumeAdapter = new MainRankAdapter(mContext, mConsumeList);
@@ -356,14 +350,14 @@ public class MainHomeRecommendViewHolder extends AbsMainHomeChildViewHolder impl
     @Override
     public void onResume() {
         super.onResume();
-        if (mPaused) {
-            if (mChargeAnimPresenter != null) {
-                ChargeSuccessBean bean = mChargeAnimPresenter.get();
-                if (bean != null) {
-                    mChargeAnimPresenter.showAnim(bean);
-                }
-            }
-        }
+//        if (mPaused) {
+//            if (mChargeAnimPresenter != null) {
+//                ChargeSuccessBean bean = mChargeAnimPresenter.get();
+//                if (bean != null) {
+//                    mChargeAnimPresenter.showAnim(bean);
+//                }
+//            }
+//        }
         mPaused = false;
     }
 }

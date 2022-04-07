@@ -31,6 +31,7 @@ public abstract class AbsMainHomeChildViewHolder extends AbsMainViewHolder {
     public void onAccostClick(ChatLiveBean bean) {
         UserBean userBean = new UserBean();
         userBean.setId(bean.getUid());
+        userBean.setAuth(bean.getIsAuth());
         userBean.setAvatar(bean.getAvatar());
         userBean.setUserNiceName(bean.getUserNiceName());
         userBean.setLevelAnchor(bean.getLevelAnchor());

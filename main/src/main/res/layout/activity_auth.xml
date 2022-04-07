@@ -263,7 +263,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:visibility="gone"
+                android:visibility="visible"
                 android:gravity="center_vertical">
 
                 <TextView
@@ -285,6 +285,7 @@
                     android:paddingRight="16dp"
                     android:paddingBottom="15dp"
                     android:singleLine="true"
+                    android:enabled="false"
                     android:textColor="@color/textColor"
                     android:textColorHint="@color/gray1"
                     android:textSize="14sp" />
@@ -292,10 +293,10 @@
 
             </LinearLayout>
 
-            <View style="@style/line2" android:visibility="gone" />
+            <View style="@style/line2" android:visibility="visible" />
 
             <LinearLayout
-                android:visibility="gone"
+                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:gravity="center_vertical">
@@ -316,6 +317,7 @@
                     android:gravity="center_vertical|right"
                     android:hint="@string/auth_id_num_tip"
                     android:maxLength="18"
+                    android:enabled="false"
                     android:digits="0123456789X"
                     android:paddingTop="15dp"
                     android:paddingRight="16dp"
@@ -328,7 +330,7 @@
 
             </LinearLayout>
 
-            <View style="@style/line2" android:visibility="gone"/>
+            <View style="@style/line2" android:visibility="visible"/>
 
             <LinearLayout
                 android:id="@+id/btn_sex"

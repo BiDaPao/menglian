@@ -1,11 +1,16 @@
 package com.aihuan.main.activity;
 
+import static com.aihuan.common.Constants.AUTH_NONE;
+import static com.aihuan.common.Constants.AUTH_SUCCESS;
+import static com.aihuan.common.Constants.AUTH_WAITING;
+
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.text.Editable;
 import android.text.TextUtils;
+import android.view.View;
 
 import com.aihuan.common.Constants;
 import com.aihuan.common.activity.AbsActivity;
@@ -69,19 +74,7 @@ public class AuthActivity extends AbsActivity {
 
     }
 
-    /**
-     * 处理回前台触发结果查询
-     */
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (waitForResult) {
-            L.e("实人认证结果——————————————————————");
-            waitForResult = false;
-            // 查询认证结果
-            checkCertifyResult();
-        }
-    }
+
 
 
     /**
@@ -94,11 +87,7 @@ public class AuthActivity extends AbsActivity {
                     dialog.dismiss();
                     verifyInfo();
                 });
-
     }
-
-
-
 
 
 
@@ -107,6 +96,7 @@ public class AuthActivity extends AbsActivity {
             mLoading = DialogUitl.loadingDialog(mContext);
         }
         mLoading.show();
+
         final String bizCode = ServiceFactory.build().getBizCode(mContext);
         OneHttpUtil.setAliAuth(mNameVal, mIdNumVal, bizCode, new HttpCallback() {
             @Override
@@ -191,10 +181,11 @@ public class AuthActivity extends AbsActivity {
         OneHttpUtil.setUserAuth(mNameVal, mIdNumVal, new HttpCallback() {
             @Override
             public void onSuccess(int code, String msg, String[] info) {
-
+                ToastUtil.show("实名认证成功");
+                AuthInfoActivity.forward(AuthActivity.this,AUTH_NONE);
+                finish();
             }
         });
-
     }
 
     private void checkCertifyResult() {
@@ -208,7 +199,7 @@ public class AuthActivity extends AbsActivity {
                         if (isAlipayAuth == 1) {
                             goPlatformCertify();
                         } else {
-                            ToastUtil.show("实人认证失败,请核对信息后重新认证！111111");
+                            ToastUtil.show("实人认证失败,请核对信息后重新认证！");
                             if (mLoading != null) {
                                 mLoading.dismiss();
                             }
@@ -230,12 +221,28 @@ public class AuthActivity extends AbsActivity {
 
     /**
      * 处理通过schema跳转过来的结果查询
+     *
      * @param intent
      */
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         queryCertifyResult(intent);
+    }
+
+    /**
+     * 处理回前台触发结果查询
+     */
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (waitForResult) {
+            L.e("实人认证结果——————————————————————");
+            waitForResult = false;
+//            uploadFile();
+            // 查询认证结果
+            checkCertifyResult();
+        }
     }
     /**
      * 业务方查询结果
@@ -260,11 +267,7 @@ public class AuthActivity extends AbsActivity {
         checkCertifyResult();
     }
 
-
     private void getAuthInfo() {
-        if (mAuthStatus == Constants.AUTH_NONE) {
-            return;
-        }
         OneHttpUtil.getAuth(new HttpCallback() {
             @Override
             public void onSuccess(int code, String msg, String[] info) {
@@ -284,9 +287,14 @@ public class AuthActivity extends AbsActivity {
                     if (hasVerify) {
                         realNameInput.setEnabled(false);
                         cardNumberInput.setEnabled(false);
+                        findViewById(R.id.btn_submit).setVisibility(View.GONE);
+                        if (!TextUtils.isEmpty(obj.getString("user_nickname"))){
+                            AuthInfoActivity.forward(AuthActivity.this,AUTH_SUCCESS);
+                        }else{
+                            AuthInfoActivity.forward(AuthActivity.this,AUTH_NONE);
+                        }
+                        finish();
                     }
-
-
                 }
             }
         });

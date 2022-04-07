@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -328,7 +329,7 @@ public class MainMeViewHolder extends AbsMainViewHolder implements View.OnClickL
         if (auth == Constants.AUTH_FAILED) {
             ToastUtil.show(R.string.auth_tip_35);
         }
-        AuthActivity.forward(mContext, auth);
+       AuthActivity.forward(mContext, auth);
     }
 
 

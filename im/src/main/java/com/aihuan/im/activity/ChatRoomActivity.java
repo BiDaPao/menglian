@@ -65,7 +65,8 @@ public class ChatRoomActivity extends AbsActivity implements KeyBoardHeightChang
         context.startActivity(intent);
     }
 
-    public static void forwardAccost(Context context, UserBean userBean, boolean isAccost, boolean following, boolean blacking, boolean auth, boolean fromUserHome) {
+    public static void forwardAccost(Context context, UserBean userBean, boolean isAccost, boolean following,
+                                     boolean blacking, boolean auth, boolean fromUserHome) {
         Intent intent = new Intent(context, ChatRoomActivity.class);
         intent.putExtra(Constants.USER_BEAN, userBean);
         intent.putExtra(Constants.FOLLOW, following);

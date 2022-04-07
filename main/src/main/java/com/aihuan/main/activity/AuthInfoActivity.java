@@ -66,7 +66,7 @@ public class AuthInfoActivity extends AbsActivity implements ChooseImpressDialog
         context.startActivity(intent);
     }
 
-    private static final String TAG = "AuthActivity";
+    private static final String TAG = "AuthInfoActivity";
     private ProcessImageUtil mImageUtil;
     private UploadImageView mCover;
     private int mTargetPositon;
@@ -663,6 +663,20 @@ public class AuthInfoActivity extends AbsActivity implements ChooseImpressDialog
 
     private void getAuthInfo() {
         if (mAuthStatus == Constants.AUTH_NONE) {
+            OneHttpUtil.getAuth(new HttpCallback() {
+                @Override
+                public void onSuccess(int code, String msg, String[] info) {
+                    if (code == 0 && info.length > 0) {
+                        JSONObject obj = JSON.parseObject(info[0]);
+                        mNameVal = obj.getString("name");
+                        mIdNumVal =obj.getString("id_card");
+                        EditText nameInput = findViewById(R.id.name);
+                        nameInput.setText(mNameVal);
+                        EditText cardInput =findViewById(R.id.id_card_num);
+                        cardInput.setText(mIdNumVal);
+                    }
+                }
+            });
             return;
         }
         OneHttpUtil.getAuth(new HttpCallback() {
@@ -672,18 +686,22 @@ public class AuthInfoActivity extends AbsActivity implements ChooseImpressDialog
                     JSONObject obj = JSON.parseObject(info[0]);
                     if (mCover != null) {
                         String thumb = obj.getString("thumb");
-                        mCoverUploadBean.setRemoteAccessUrl(thumb);
-                        mCoverUploadBean.setRemoteFileName(thumb.substring(thumb.lastIndexOf("/") + 1));
-                        mCover.showImageData(mCoverUploadBean);
+                        if (!TextUtils.isEmpty(thumb)){
+                            mCoverUploadBean.setRemoteAccessUrl(thumb);
+                            mCoverUploadBean.setRemoteFileName(thumb.substring(thumb.lastIndexOf("/") + 1));
+                            mCover.showImageData(mCoverUploadBean);
+                        }
                     }
                     if (mAdapter != null) {
                         List<String> imageUrlList = JSON.parseArray(obj.getString("photos_list"), String.class);
                         List<UploadBean> bgList = new ArrayList<>();
                         for (String imageUrl : imageUrlList) {
-                            UploadBean bean = new UploadBean();
-                            bean.setRemoteAccessUrl(imageUrl);
-                            bean.setRemoteFileName(imageUrl.substring(imageUrl.lastIndexOf("/") + 1));
-                            bgList.add(bean);
+                            if (!TextUtils.isEmpty(imageUrl)){
+                                UploadBean bean = new UploadBean();
+                                bean.setRemoteAccessUrl(imageUrl);
+                                bean.setRemoteFileName(imageUrl.substring(imageUrl.lastIndexOf("/") + 1));
+                                bgList.add(bean);
+                            }
                         }
                         mAdapter.setList(bgList);
                     }

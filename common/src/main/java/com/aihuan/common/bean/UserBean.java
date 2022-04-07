@@ -43,6 +43,13 @@ public class UserBean implements Parcelable {
 
     protected int isUserauth;
 
+
+    public boolean isAuth() {
+        return this.auth == 1;
+    }
+
+
+
     /**
      * 解释一下，上面两行
      * 在服务端的某些接口里面，关注用 isattent 表示 有些用 u2t 表示，

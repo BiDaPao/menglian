@@ -400,7 +400,7 @@ public class ImRoomAdapter extends RecyclerView.Adapter {
 
             if (!bean.isFromSelf()){
                 mAvatar.setOnClickListener(v -> {
-                if (!mToAuth) {
+                if (!mToUserBean.isAuth()) {
                         ToastUtil.show(R.string.user_is_not_auth);
                     } else {
                         RouteUtil.forwardUserHome(mToUid);
