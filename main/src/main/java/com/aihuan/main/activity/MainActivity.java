@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import androidx.viewpager.widget.ViewPager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -514,8 +515,11 @@ public class MainActivity extends AbsDynamicActivity implements MainAppBarLayout
         if (position == 2) {
             mMainFindViewHolder.matchType(matchType);
         }
-        if (needlLoadData && vh != null) {
-            vh.loadData();
+        //如果添加了就不再进行刷新加载了
+        if (needlLoadData && vh != null && !vh.isShowed()) {
+            if (position!=0) {
+                vh.loadData();
+            }
         }
     }
 

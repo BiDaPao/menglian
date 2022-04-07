@@ -275,6 +275,8 @@ public class MainHomeRecommendViewHolder extends AbsMainHomeChildViewHolder impl
         }
     }
 
+
+
     @Override
     public void loadData() {
         if (mRefreshView != null) {

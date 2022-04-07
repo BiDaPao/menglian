@@ -146,6 +146,15 @@ public class MainHomeViewHolder extends AbsMainHomeParentViewHolder implements V
         };
     }
 
+    @Override
+    public void onResume() {
+        if (isShowed() && mPaused ) {
+            if (mCurrentPagePosition!=0) {
+                loadData();
+            }
+        }
+        mPaused = false;
+    }
 
     @Override
     public void onClick(View v) {

@@ -262,11 +262,7 @@ public class ChatRoomViewHolder extends AbsViewHolder implements
             ImgLoader.displayAvatar(mContext, mUserBean.getAvatar(), ivLeft);
             //跳转主页；
             ivLeft.setOnClickListener(v -> {
-                if (!mUserBean.isAuth()) {
-                    ToastUtil.show(R.string.user_is_not_auth);
-                } else {
-                    RouteUtil.forwardUserHome(mUserBean.getId());
-                }
+                RouteUtil.forwardUserHome(mUserBean.getId());
             });
         }
         UserBean userBean = CommonAppConfig.getInstance().getUserBean();

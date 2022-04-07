@@ -4,6 +4,8 @@ import android.content.Context;
 import com.google.android.material.appbar.AppBarLayout;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
+
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -37,7 +39,7 @@ public abstract class AbsMainHomeParentViewHolder extends AbsMainViewHolder {
     private MagicIndicator mIndicator;
     protected AbsMainHomeChildViewHolder[] mViewHolders;
     private MainAppBarLayoutListener mAppBarLayoutListener;
-    private boolean mPaused;
+    protected boolean mPaused;
     protected List<FrameLayout> mViewList;
     private int mAppLayoutOffestY;
 
@@ -155,7 +157,7 @@ public abstract class AbsMainHomeParentViewHolder extends AbsMainViewHolder {
     public void onResume() {
         super.onResume();
         if (isShowed() && mPaused ) {
-            loadData();
+           loadData();
         }
         mPaused = false;
     }
