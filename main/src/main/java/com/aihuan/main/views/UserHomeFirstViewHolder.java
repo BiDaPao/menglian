@@ -201,7 +201,25 @@ public class UserHomeFirstViewHolder extends AbsUserHomeViewHolder {
         if (mOnLine != null) {
             mOnLine.setImageResource(CommonIconUtil.getOnLineIcon2(obj.getIntValue("online")));
         }
+
+        //id: "375",
+        //uid: "103184",
+        //thumb: "http://cc.lcmdhr.top/android_103184_20220331_110402_6053695.jpg",
+        //href: "",
+        //type: "0"
+
+
+
         List<WallBean> photos = JSON.parseArray(obj.getString("photos_list"), WallBean.class);
+
+        if (photos.isEmpty()){
+            WallBean wallBean = new WallBean();
+            wallBean.setThumb(obj.getString("avatar"));
+            wallBean.setId("11");
+            wallBean.setUid(mToUid);
+            wallBean.setType(0);
+            photos.add(wallBean);
+        }
         setImageList(photos);
         setFollow(obj.getIntValue("isattent") == 1);
 

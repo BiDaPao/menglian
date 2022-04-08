@@ -179,11 +179,18 @@ public class UserHomeNewActivity extends AbsDynamicActivity implements ChatGiftD
         });
     }
 
+    private boolean assetNullKeyValue(JSONObject obj ,String key ){
+      return   !obj.containsKey(key)||obj.get(key)==null||TextUtils.isEmpty(obj.get(key).toString());
+    }
     private void setUserObj(JSONObject obj) {
         if (obj == null) {
             return;
         }
         mUserObj = obj;
+
+        if (assetNullKeyValue(obj,"sex")){
+            obj.put("sex",-1);
+        }
         mUserBean = JSON.toJavaObject(obj, UserBean.class);
         if (mViewPager != null) {
             loadPageData(mViewPager.getCurrentItem());

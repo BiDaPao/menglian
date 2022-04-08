@@ -178,25 +178,25 @@ public class UserHomeDetailViewHolder extends AbsUserHomeViewHolder implements V
         if (mLintenRate != null) {
             mLintenRate.setText(createColorString(WordUtil.getString(R.string.user_home_listen_rate), obj.getString("answer_rate")));
         }
-        if (mHeight != null) {
+        if (mHeight != null && obj.containsKey("height")) {
             mHeight.setText(createColorString(WordUtil.getString(R.string.user_home_height), obj.getString("height")));
         }
-        if (mWeight != null) {
+        if (mWeight != null && obj.containsKey("weight")) {
             mWeight.setText(createColorString(WordUtil.getString(R.string.user_home_weight), obj.getString("weight")));
         }
-        if (mCity != null) {
+        if (mCity != null && obj.containsKey("city")) {
             mCity.setText(createColorString(WordUtil.getString(R.string.user_home_city), obj.getString("city")));
         }
-        if (mStar != null) {
+        if (mStar != null && obj.containsKey("constellation")) {
             mStar.setText(createColorString(WordUtil.getString(R.string.user_home_star), obj.getString("constellation")));
         }
-        if (mGiftCount != null) {
+        if (mGiftCount != null && obj.containsKey("gift_total")) {
             mGiftCount.setText(obj.getString("gift_total"));
         }
-        if (mGoodNum != null) {
+        if (mGoodNum != null && obj.containsKey("goodnums")) {
             mGoodNum.setText(obj.getString("goodnums"));
         }
-        if (mBadNum != null) {
+        if (mBadNum != null && obj.containsKey("badnums")) {
             mBadNum.setText(obj.getString("badnums"));
         }
         List<GiftCabBean> giftList = JSON.parseArray(obj.getString("gift_list"), GiftCabBean.class);

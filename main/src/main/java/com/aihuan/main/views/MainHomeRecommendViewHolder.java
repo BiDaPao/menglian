@@ -268,11 +268,7 @@ public class MainHomeRecommendViewHolder extends AbsMainHomeChildViewHolder impl
 
     @Override
     public void onItemClick(ChatLiveBean bean, int position) {
-        if (bean.isAuth()) {
-            forwardUserHome(bean.getUid());
-        } else {
-            onAccostClick(bean);
-        }
+        forwardUserHome(bean.getUid());
     }
 
 

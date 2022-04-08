@@ -399,13 +399,7 @@ public class ImRoomAdapter extends RecyclerView.Adapter {
         void setData(ImMessageBean bean, int position, Object payload) {
 
             if (!bean.isFromSelf()){
-                mAvatar.setOnClickListener(v -> {
-                if (!mToUserBean.isAuth()) {
-                        ToastUtil.show(R.string.user_is_not_auth);
-                    } else {
-                        RouteUtil.forwardUserHome(mToUid);
-                    }
-                });
+                mAvatar.setOnClickListener(v -> RouteUtil.forwardUserHome(mToUid));
             }else{
                 mAvatar.setOnClickListener(v -> {
                    
