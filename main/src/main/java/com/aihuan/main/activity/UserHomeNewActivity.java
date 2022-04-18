@@ -344,15 +344,13 @@ public class UserHomeNewActivity extends AbsDynamicActivity implements ChatGiftD
      * 点击关注
      */
     private void followClick() {
-        getUserObj();
-        getUserBean();
         getData();
         mFirstViewHolder = new UserHomeFirstViewHolder(mContext,null,mToUid);
 //        JSONObject obj = ((UserHomeNewActivity) mContext).getUserObj();
 //        Toast.makeText(mContext, "进入方法", Toast.LENGTH_SHORT).show();
         CommonHttpUtil.setAttention(mToUid, null);
 //        System.out.println("ssss"+obj.getIntValue("isattent"));
-            mFirstViewHolder.onResume();
+//            mFirstViewHolder.onResume();
     }
 
     /**
@@ -374,12 +372,11 @@ public class UserHomeNewActivity extends AbsDynamicActivity implements ChatGiftD
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onFollowEvent(FollowEvent e) {
         if (mFirstViewHolder != null) {
-            getUserObj();
-            getUserBean();
             getData();
             mFirstViewHolder.setFollow(e.getIsAttention() == 1);
         }
         if (mSecondViewHolder != null) {
+            getData();
             mSecondViewHolder.setFollow(e.getIsAttention() == 1);
         }
         if (mUserBean != null) {

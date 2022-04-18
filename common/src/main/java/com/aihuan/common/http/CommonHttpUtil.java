@@ -220,12 +220,6 @@ public class CommonHttpUtil {
                         if (code == 0 && info.length > 0) {
                             int isAttention = JSON.parseObject(info[0]).getIntValue("isattent");//1是 关注  0是未关注
 
-//                            if (isAttention == 1){
-//                                System.out.println("aaa关注成功！");
-//
-//                            }else {
-//                                System.out.println("aaa取消关注！");
-//                            }
                             EventBus.getDefault().post(new FollowEvent(touid, isAttention));
                             if (callback != null) {
                                 callback.callback(isAttention);

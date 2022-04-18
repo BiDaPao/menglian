@@ -7,6 +7,8 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -303,17 +305,18 @@ public class UserHomeFirstViewHolder extends AbsUserHomeViewHolder {
 
     //判断有没有关注
     public void setFollow(boolean follow) {
-//        if (mBtnFollow != null) {
+        if (mBtnFollow != null) {
 //            //问题  ↓↓↓
 //            mBtnFollow.setImageDrawable(follow ?  mFollowDrawable : mUnFollowDrawable );
 ////            onResume();
-//        }
-        if (follow == true){
-            Toast.makeText(mContext, "返回的true", Toast.LENGTH_SHORT).show();
-            mBtnFollow.setImageDrawable(mFollowDrawable);
-        }else{
-            Toast.makeText(mContext, "返回的false", Toast.LENGTH_SHORT).show();
-            mBtnFollow.setImageDrawable(mUnFollowDrawable);
+            Log.e("sss","测试接口1  ");
+            if (follow == true){
+                Toast.makeText(mContext, "返回的true", Toast.LENGTH_SHORT).show();
+                mBtnFollow.setImageDrawable(mFollowDrawable);
+            }else if (follow == false){
+                Toast.makeText(mContext, "返回的false", Toast.LENGTH_SHORT).show();
+                mBtnFollow.setImageDrawable(mUnFollowDrawable);
+            }
         }
     }
 
@@ -369,13 +372,13 @@ public class UserHomeFirstViewHolder extends AbsUserHomeViewHolder {
 
     @Override
     public void onResume() {
-        JSONObject obj = ((UserHomeNewActivity) mContext).getUserObj();
-        Toast.makeText(mContext, "resume: "+obj.getIntValue("isattent"), Toast.LENGTH_SHORT).show();
-        if(obj.getIntValue("isattent") == 1){
-            mBtnFollow.setImageDrawable(mFollowDrawable);
-        }else{
-            mBtnFollow.setImageDrawable(mUnFollowDrawable);
-        }
+//        JSONObject obj = ((UserHomeNewActivity) mContext).getUserObj();
+//        Toast.makeText(mContext, "resume: "+obj.getIntValue("isattent"), Toast.LENGTH_SHORT).show();
+//        if(obj.getIntValue("isattent") == 1){
+//            mBtnFollow.setImageDrawable(mFollowDrawable);
+//        }else{
+//            mBtnFollow.setImageDrawable(mUnFollowDrawable);
+//        }
     }
 
     @Override

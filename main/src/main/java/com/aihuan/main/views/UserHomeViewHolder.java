@@ -5,12 +5,15 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
+
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.aihuan.common.adapter.ViewPagerAdapter;
 import com.aihuan.common.utils.DpUtil;
@@ -238,8 +241,20 @@ public class UserHomeViewHolder extends AbsUserHomeViewHolder {
 
     public void setFollow(boolean follow) {
         if (mBtnFollow != null) {
-            mBtnFollow.setImageDrawable(follow ? mFollowDrawable : mUnFollowDrawable);
+//            Log.e("sss","测试接口2   follow:");
+//            mBtnFollow.setImageDrawable(follow ? mFollowDrawable : mUnFollowDrawable);
+            Log.e("sss","测试接口2  ");
+
+            if (follow == true){
+                Toast.makeText(mContext, "返回的true", Toast.LENGTH_SHORT).show();
+                mBtnFollow.setImageDrawable(mFollowDrawable);
+            }else if (follow == false){
+                Toast.makeText(mContext, "返回的false", Toast.LENGTH_SHORT).show();
+                mBtnFollow.setImageDrawable(mUnFollowDrawable);
+            }
         }
+
+
     }
 
     @Override
