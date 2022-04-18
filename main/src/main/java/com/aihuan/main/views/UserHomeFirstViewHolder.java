@@ -8,12 +8,14 @@ import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.aihuan.common.utils.ToastUtil;
 import com.aihuan.main.activity.UserHomeNewActivity;
@@ -222,7 +224,6 @@ public class UserHomeFirstViewHolder extends AbsUserHomeViewHolder {
         }
         setImageList(photos);
         setFollow(obj.getIntValue("isattent") == 1);
-
         voiceUrl = obj.getString("f_voice");
         voiceDuration = obj.getIntValue("f_voice_duration");
         if (TextUtils.isEmpty(voiceUrl)) {
@@ -300,11 +301,24 @@ public class UserHomeFirstViewHolder extends AbsUserHomeViewHolder {
         });
     }
 
+    //判断有没有关注
     public void setFollow(boolean follow) {
-        if (mBtnFollow != null) {
-            mBtnFollow.setImageDrawable(follow ? mFollowDrawable : mUnFollowDrawable);
+//        if (mBtnFollow != null) {
+//            //问题  ↓↓↓
+//            mBtnFollow.setImageDrawable(follow ?  mFollowDrawable : mUnFollowDrawable );
+////            onResume();
+//        }
+        if (follow == true){
+            Toast.makeText(mContext, "返回的true", Toast.LENGTH_SHORT).show();
+            mBtnFollow.setImageDrawable(mFollowDrawable);
+        }else{
+            Toast.makeText(mContext, "返回的false", Toast.LENGTH_SHORT).show();
+            mBtnFollow.setImageDrawable(mUnFollowDrawable);
         }
     }
+
+
+
 
     public void setVideoPause(boolean pause) {
         if (mViewList != null && mViewList.size() > 0) {
@@ -350,6 +364,17 @@ public class UserHomeFirstViewHolder extends AbsUserHomeViewHolder {
                 animationDrawable.stop();
                 ivVoice.setImageResource(R.mipmap.icon_voice_left_3);
             }
+        }
+    }
+
+    @Override
+    public void onResume() {
+        JSONObject obj = ((UserHomeNewActivity) mContext).getUserObj();
+        Toast.makeText(mContext, "resume: "+obj.getIntValue("isattent"), Toast.LENGTH_SHORT).show();
+        if(obj.getIntValue("isattent") == 1){
+            mBtnFollow.setImageDrawable(mFollowDrawable);
+        }else{
+            mBtnFollow.setImageDrawable(mUnFollowDrawable);
         }
     }
 

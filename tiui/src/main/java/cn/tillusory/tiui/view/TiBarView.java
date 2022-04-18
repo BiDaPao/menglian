@@ -34,7 +34,6 @@ import com.hwangjr.rxbus.thread.EventThread;
 public class TiBarView extends LinearLayout {
 
     private TiSDKManager tiSDKManager;
-
     private TextView tiBubbleTV;
     private TextView tiNumberTV;
     private SeekBar tiSeekBar;

@@ -38,8 +38,7 @@
                 android:onClick="backClick"
                 android:padding="9dp"
                 android:src="@mipmap/icon_back"
-                android:tint="@color/gray1"
-                />
+                android:tint="@color/gray1" />
 
             <ImageView
                 android:id="@+id/btn_more"
@@ -51,8 +50,7 @@
                 android:onClick="userHomeClick"
                 android:padding="6dp"
                 android:src="@mipmap/icon_video_more"
-                android:tint="@color/textColor2"
-                />
+                android:tint="@color/textColor2" />
 
         </RelativeLayout>
     </FrameLayout>
@@ -104,8 +102,7 @@
             android:layout_height="50dp"
             android:layout_marginRight="5dp"
             android:onClick="userHomeClick"
-            android:src="@mipmap/o_user_btn_follow_2_0"
-            />
+            android:src="@mipmap/o_user_btn_follow_2_0" />
 
         <ImageView
             android:id="@+id/btn_gift"

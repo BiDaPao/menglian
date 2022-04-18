@@ -66,6 +66,7 @@ public class MainHomeViewHolder extends AbsMainHomeParentViewHolder implements V
         });
     }
 
+    //首页tab选项卡
     @Override
     protected void loadPageData(int position) {
         if (mViewHolders == null) {

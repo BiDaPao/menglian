@@ -71,7 +71,6 @@ public class LauncherActivity extends AppCompatActivity {
         }, 1000);
     }
 
-
     /**
      * 获取Config信息
      */

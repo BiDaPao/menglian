@@ -139,6 +139,7 @@ public class MainHomeRecommendViewHolder extends AbsMainHomeChildViewHolder impl
 //                        }
 //                    }
 //                }
+
 //            });
 
             mRankView = headView.findViewById(R.id.rank_view);

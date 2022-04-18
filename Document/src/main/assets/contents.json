@@ -445,6 +445,7 @@
           {
             "name": "LoginInvalidEvent",
             "des": "登录失效事件",
+            "des": "登录失效事件",
             "level": 2
           },
           {

@@ -10,9 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.aihuan.common.http.HttpClient;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.aihuan.common.CommonAppConfig;
@@ -76,6 +79,7 @@ public class UserHomeActivity extends AbsDynamicActivity implements ChatGiftDial
     private boolean mPaused;
     private View mChooseCallTypeView;
     private PopupWindow mPopupWindow;
+
 
     @Override
     protected int getLayoutId() {
@@ -322,6 +326,26 @@ public class UserHomeActivity extends AbsDynamicActivity implements ChatGiftDial
      */
     private void followClick() {
         CommonHttpUtil.setAttention(mToUid, null);
+//        if (mToUid.equals(CommonAppConfig.getInstance().getUid())) {
+//            ToastUtil.show(WordUtil.getString(com.aihuan.common.R.string.cannot_follow_self));
+//            return;
+//        }
+//        HttpClient.getInstance().get("User.setAttent", CommonHttpConsts.SET_ATTENTION)
+//                .params("uid", CommonAppConfig.getInstance().getUid())
+//                .params("token", CommonAppConfig.getInstance().getToken())
+//                .params("touid", mToUid)
+//                .execute(new HttpCallback() {
+//                    @Override
+//                    public void onSuccess(int code, String msg, String[] info) {
+//                        if (code == 0 && info.length > 0) {
+//                            int isAttention = JSON.parseObject(info[0]).getIntValue("isattent");//1是 关注  0是未关注
+//
+//                            EventBus.getDefault().post(new FollowEvent(mToUid, isAttention));
+//
+//                        }
+//                    }
+//                });
+
     }
 
     /**

@@ -1,17 +1,22 @@
 package com.aihuan.main.activity;
 
 import android.Manifest;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import androidx.viewpager.widget.ViewPager;
+
+import android.text.Layout;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.aihuan.common.CommonAppConfig;
 import com.aihuan.common.Constants;
@@ -23,6 +28,7 @@ import com.aihuan.common.event.FollowEvent;
 import com.aihuan.common.http.CommonHttpConsts;
 import com.aihuan.common.http.CommonHttpUtil;
 import com.aihuan.common.http.HttpCallback;
+import com.aihuan.common.http.HttpClient;
 import com.aihuan.common.interfaces.CommonCallback;
 import com.aihuan.common.presenter.GiftAnimViewHolder;
 import com.aihuan.common.utils.DialogUitl;
@@ -338,7 +344,15 @@ public class UserHomeNewActivity extends AbsDynamicActivity implements ChatGiftD
      * 点击关注
      */
     private void followClick() {
+        getUserObj();
+        getUserBean();
+        getData();
+        mFirstViewHolder = new UserHomeFirstViewHolder(mContext,null,mToUid);
+//        JSONObject obj = ((UserHomeNewActivity) mContext).getUserObj();
+//        Toast.makeText(mContext, "进入方法", Toast.LENGTH_SHORT).show();
         CommonHttpUtil.setAttention(mToUid, null);
+//        System.out.println("ssss"+obj.getIntValue("isattent"));
+            mFirstViewHolder.onResume();
     }
 
     /**
@@ -360,6 +374,9 @@ public class UserHomeNewActivity extends AbsDynamicActivity implements ChatGiftD
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onFollowEvent(FollowEvent e) {
         if (mFirstViewHolder != null) {
+            getUserObj();
+            getUserBean();
+            getData();
             mFirstViewHolder.setFollow(e.getIsAttention() == 1);
         }
         if (mSecondViewHolder != null) {

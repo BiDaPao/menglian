@@ -238,7 +238,7 @@
                 android:layout_height="30dp"
                 android:layout_marginRight="10dp"
                 android:onClick="userHomeClick"
-                android:src="@mipmap/o_user_btn_follow_1_0" />
+                android:background="@mipmap/o_user_btn_follow_1_0" />
 
             <ImageView
                 android:id="@+id/btn_gift"

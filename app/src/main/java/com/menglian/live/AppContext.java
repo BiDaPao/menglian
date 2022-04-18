@@ -2,6 +2,7 @@ package com.menglian.live;
 
 import android.text.TextUtils;
 
+import com.alibaba.android.arouter.BuildConfig;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.mob.MobSDK;
 //import com.squareup.leakcanary.LeakCanary;
