@@ -5,6 +5,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
+
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -55,6 +57,8 @@ public class UserHomeViewHolder extends AbsUserHomeViewHolder {
     private Drawable mFollowDrawable;
     private ImageView mBtnChat;
     private FrameLayout topContainer;
+
+    private UserHomeFirstViewHolder holder;
 
     public UserHomeViewHolder(Context context, ViewGroup parentView, String toUid) {
         super(context, parentView, toUid);
@@ -167,7 +171,7 @@ public class UserHomeViewHolder extends AbsUserHomeViewHolder {
             }
         });
         ViewPagerHelper.bind(mIndicator, mViewPager);
-        UserHomeFirstViewHolder holder = new UserHomeFirstViewHolder(mContext, null, mToUid);
+        holder = new UserHomeFirstViewHolder(mContext, null, mToUid);
         topContainer.addView(holder.getContentView());
         holder.loadData();
     }
@@ -238,7 +242,9 @@ public class UserHomeViewHolder extends AbsUserHomeViewHolder {
 
     public void setFollow(boolean follow) {
         if (mBtnFollow != null) {
+            Log.e("ssss","测试接口2");
             mBtnFollow.setImageDrawable(follow ? mFollowDrawable : mUnFollowDrawable);
+            holder.setFollow(follow);
         }
     }
 

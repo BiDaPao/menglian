@@ -7,6 +7,8 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -300,8 +302,10 @@ public class UserHomeFirstViewHolder extends AbsUserHomeViewHolder {
         });
     }
 
+
     public void setFollow(boolean follow) {
         if (mBtnFollow != null) {
+            Log.e("ssss","测试接口1");
             mBtnFollow.setImageDrawable(follow ? mFollowDrawable : mUnFollowDrawable);
         }
     }

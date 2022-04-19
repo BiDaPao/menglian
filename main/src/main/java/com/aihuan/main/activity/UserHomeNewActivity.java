@@ -5,6 +5,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import androidx.viewpager.widget.ViewPager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -360,9 +361,13 @@ public class UserHomeNewActivity extends AbsDynamicActivity implements ChatGiftD
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onFollowEvent(FollowEvent e) {
         if (mFirstViewHolder != null) {
+            Log.e("ssss","first");
             mFirstViewHolder.setFollow(e.getIsAttention() == 1);
         }
         if (mSecondViewHolder != null) {
+            Log.e("ssss","second");
+            mFirstViewHolder = new UserHomeFirstViewHolder(mContext,null,mToUid);
+            mFirstViewHolder.loadData();
             mSecondViewHolder.setFollow(e.getIsAttention() == 1);
         }
         if (mUserBean != null) {
