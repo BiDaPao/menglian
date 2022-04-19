@@ -128,6 +128,7 @@
     <string name="im_get_location_failed">获取位置失败</string>
     <string name="im_follow_tip">点击关注，可及时看到对方动态</string>
     <string name="im_press_say">按住 说话</string>
+    <string name="im_press_time">您已录制</string>
     <string name="im_unpress_stop">松开 结束</string>
     <string name="im_please_say">请说话...</string>
     <string name="im_record_audio_too_short">录音时间太短</string>

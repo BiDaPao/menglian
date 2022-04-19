@@ -26,6 +26,8 @@ import com.alibaba.android.arouter.utils.TextUtils;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * @author Saint  2022/2/14 13:40
@@ -50,6 +52,10 @@ public class VoiceSettingActivity extends AbsActivity {
     private int mRecordVoiceDuration;//录音时长
     private Handler mHandler;
 
+    private Timer timer;
+    private TextView tv_voice_time;
+    int i = 0;
+
     //音频文件URL
     private String voiceUrl;
 
@@ -66,6 +72,8 @@ public class VoiceSettingActivity extends AbsActivity {
         voiceUrl = getIntent().getStringExtra("voice_url");
         mRecordVoiceDuration = getIntent().getIntExtra("voice_duration", 0);
         setTitle(WordUtil.getString(R.string.voice_setting));
+
+        tv_voice_time = findViewById(R.id.tv_voice_time);
 
         mHandler = new Handler();
         btnSubmit = findViewById(R.id.btn_submit);
@@ -182,6 +190,15 @@ public class VoiceSettingActivity extends AbsActivity {
         if (tvVoiceRecord == null) {
             return;
         }
+        tv_voice_time.setVisibility(View.VISIBLE);
+        timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                tv_voice_time.setText("您已录制: "+i+"''");
+                i++;
+            }
+        },0,1000);
         tvVoiceRecord.setText(mUnPressStopString);
         if (mMediaRecordUtil == null) {
             mMediaRecordUtil = new MediaRecordUtil();
@@ -215,6 +232,9 @@ public class VoiceSettingActivity extends AbsActivity {
         tvVoiceRecord.setText(mPressSayString);
         mRecordVoiceDuration = (int) (mMediaRecordUtil.stopRecord() / 1000);
         L.e("语音录制时长：" + mRecordVoiceDuration);
+        timer.cancel();
+        i=0;
+        tv_voice_time.setVisibility(View.INVISIBLE);
         if (mRecordVoiceDuration < 2) {
             ToastUtil.show(WordUtil.getString(com.aihuan.im.R.string.im_record_audio_too_short));
             deleteVoiceFile();

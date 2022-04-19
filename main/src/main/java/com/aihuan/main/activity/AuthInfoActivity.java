@@ -336,7 +336,9 @@ public class AuthInfoActivity extends AbsActivity implements ChooseImpressDialog
         mTargetPositon = targetPositon;
         if (mChooseImageDialog == null) {
             mChooseImageDialog = DialogUitl.getStringArrayDialog(mContext, new Integer[]{
-                    R.string.camera, R.string.alumb}, true, new DialogUitl.StringArrayDialogCallback() {
+                    R.string.camera,
+                    R.string.alumb
+            }, true, new DialogUitl.StringArrayDialogCallback() {
                 @Override
                 public void onItemClick(String text, int tag) {
                     boolean needCrop = mTargetPositon == targetThumb || mTargetPositon == targetAvatar;
