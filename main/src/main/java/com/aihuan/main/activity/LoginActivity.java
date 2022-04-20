@@ -8,10 +8,12 @@ import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -176,11 +178,13 @@ public class LoginActivity extends AbsActivity implements OnItemClickListener<Mo
      */
     private void onLoginSuccess(int code, String msg, String[] info) {
         if (code == 0 && info.length > 0) {
+
             JSONObject obj = JSON.parseObject(info[0]);
             String uid = obj.getString("id");
             String token = obj.getString("token");
             mFirstLogin = obj.getIntValue("isreg") == 1;
             CommonAppConfig.getInstance().setLoginInfo(uid, token, true);
+            //从后台获取密钥
             SpUtil.getInstance().setStringValue(SpUtil.TX_IM_USER_SIGN, obj.getString("usersig"));
             //友盟统计登录
             MobclickAgent.onProfileSignIn(mLoginType, uid);
@@ -228,12 +232,14 @@ public class LoginActivity extends AbsActivity implements OnItemClickListener<Mo
     }
 
 
+    //点击登录
     @Override
     public void onItemClick(MobBean bean, int position) {
         if (!checkBox.isSelected()) {
             ToastUtil.show(R.string.user_agreement_check_tips);
             return;
         }
+        //如果选择手机登录
         if (Constants.MOB_PHONE.equals(bean.getType())) {
             LoginPhoneActivity.forward(mContext);
             return;

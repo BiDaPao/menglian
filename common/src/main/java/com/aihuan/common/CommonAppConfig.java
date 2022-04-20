@@ -60,7 +60,9 @@ public class CommonAppConfig {
     //当前app是否是云豹自己的产品
     public static final boolean APP_IS_YUNBAO_SELF = false;
     //腾讯IM appId    update----10.24
-    public static final int TX_IM_APP_Id = 1400624178;
+//    public static final int TX_IM_APP_Id = 1400624178;
+//    腾讯IM appId    体验版
+    public static final int TX_IM_APP_Id = 1400626552;
 
     public static final String APP_VERSION = VersionUtil.getVersion();//app版本号
     public static final String SYSTEM_MODEL = android.os.Build.MODEL;//手机型号

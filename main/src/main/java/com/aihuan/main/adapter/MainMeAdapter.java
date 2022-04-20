@@ -5,6 +5,8 @@ import android.graphics.drawable.Drawable;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -178,6 +180,11 @@ public class MainMeAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder vh, int position, @NonNull List payloads) {
         Object payload = payloads.size() > 0 ? payloads.get(0) : null;
         if (vh instanceof Vh) {
+            //隐藏背景墙start
+            if (mList.get(position - 1).getName().equals("背景墙")){
+                return;
+            }
+            //隐藏背景墙end
             ((Vh) vh).setData(mList.get(position - 1), position, payload);
         }
     }

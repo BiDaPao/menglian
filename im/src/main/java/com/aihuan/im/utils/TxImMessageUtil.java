@@ -7,6 +7,7 @@ import android.media.SoundPool;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.aihuan.common.utils.MediaManager;
 import com.aihuan.im.event.ImCensorMsgEvent;
@@ -260,9 +261,11 @@ public class TxImMessageUtil implements ImClient, TIMMessageListener, TIMOffline
         timManager.setOfflinePushListener(this);
     }
 
+    //登录IM
     @Override
     public void loginImClient(String uid) {
         String sign = SpUtil.getInstance().getStringValue(SpUtil.TX_IM_USER_SIGN);
+        Log.e("aaaa","sign: "+sign);
         if (TextUtils.isEmpty(sign)) {
             ToastUtil.show("腾讯IM登录失败！ 签名错误！");
             return;

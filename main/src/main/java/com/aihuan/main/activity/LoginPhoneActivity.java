@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -232,6 +233,10 @@ public class LoginPhoneActivity extends AbsActivity {
      * 检测用户是否被封禁，并提示
      */
     private void getUserStatus(int loginCode, String loginMsg, String[] info) {
+        String showinfo = "";
+        for (int i = 0;i<info.length;i++){
+            showinfo = showinfo+info[i];
+        }
         if (loginCode != 0) {
             ToastUtil.show(loginMsg);
             return;
